@@ -1,0 +1,561 @@
+/* Общие стили для body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* Стили для шапки */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #4CAF50;  /* Добавим эффект при наведении */
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gallery-container {
+    width: 100%;
+    min-height: 150px;
+    padding: 0;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Для позиционирования элементов */
+    background-size: cover; /* Растягиваем фон */
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
+.gallery-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Фотография контейнера, которая занимает всю площадь */
+.gallery-container .image {
+    width: 100%;
+    height: 200px; /* Высота контейнера */
+    background-size: contain; /* Масштабирует изображение внутри контейнера */
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: zoom-in;
+    transition: transform 0.3s;
+}
+.gallery-container .image:hover {
+    transform: scale(1.02);
+}
+
+/* Для заголовка */
+.gallery-container h3 {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.gallery-container h3:hover {
+    background-color: #f8f8f8;
+}
+
+
+/* Текст внутри контейнера */
+h3 {
+    font-size: 18px;
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Изображения под контейнерами */
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.images-container img {
+    width: calc(33% - 10px); /* Каждое изображение занимает 1/3 ширины */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.images-container img:hover {
+    transform: scale(1.1);  /* Увеличение изображения при наведении */
+}
+
+/* Стили для модальных окон */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    max-width: 700px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.modal img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+#cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 35px;
+    background-color: #4CAF50;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#cart-icon:hover {
+    transform: scale(1.1);
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#cart-modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#cart-modal .modal-content {
+    width: 90%; /* Занимает 90% ширины экрана */
+    max-width: 800px; /* Максимальная ширина */
+    min-width: 300px; /* Минимальная широка для мобилок */
+    overflow-y: auto; /* Прокрутка при переполнении */
+    max-height: 90vh; /* Максимальная высота */
+  }
+
+#cart-items td {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Стили для уведомлений */
+#notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.notification.hide {
+    opacity: 0;
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    #cart-modal table {
+        font-size: 14px; /* Уменьшаем шрифт */
+      }
+      #cart-modal th, 
+      #cart-modal td {
+        padding: 8px; /* Уменьшаем отступы */
+      }
+      #cart-modal .modal-content {
+        padding: 15px; /* Уменьшаем внутренние отступы */
+      }
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 80%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul li {
+        margin: 0;
+    }
+}
+/* Стили для магазина */
+.shop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.quantity-controls button {
+    background-color: #4CAF50;
+    color: white;
+    width: 25px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.quantity-controls button:hover {
+    background-color: #45a049;
+}
+
+.product-quantity {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.product-quantity:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+}
+#notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.notification.hide {
+    opacity: 0;
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+#cart-modal .modal-content {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: modalSlideIn 0.3s forwards;
+}
+
+@keyframes modalSlideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#cart-modal table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+#cart-modal th {
+    background: #f8f9fa;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #e9ecef;
+}
+
+#cart-modal td {
+    padding: 12px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+#cart-modal input[type="text"] {
+    width: 100%;
+    box-sizing: border-box; /* Учитываем padding */
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin: 8px 0;
+    transition: border-color 0.3s;
+}
+
+#cart-modal input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+#checkout-btn {
+    background: #4CAF50;
+    width: 100%;
+    padding: 14px;
+    margin-top: 1rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.2s;
+}
+
+#checkout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76,175,80,0.3);
+}
+
+.remove-item {
+    background: #ff4444 !important;
+}
+
+.decrease-qty, .increase-qty {
+    background: #6c757d !important;
+    width: 30px !important;
+    height: 30px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    animation: rotation 1s linear infinite;
+    margin: 0 auto;
+    border-top-color: transparent;
+}
+
+@keyframes rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.checkmark {
+    color: #4CAF50;
+    font-size: 24px;
+    animation: checkmarkScale 0.5s ease-out;
+}
+
+@keyframes checkmarkScale {
+    0% { transform: scale(0); }
+    90% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Стили для типов уведомлений */
+.notification.success {
+    background: #4CAF50;
+}
+
+.notification.error {
+    background: #ff4444;
+}
+/* Подсветка активной страницы */
+header nav ul li a.active {
+    font-size: 1.2em; /* Увеличиваем шрифт */
+    color: #4CAF50 !important; /* Цвет акцента */
+    position: relative;
+  }
+  
+  /* Полоска под активной ссылкой */
+  header nav ul li a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4CAF50;
+  }

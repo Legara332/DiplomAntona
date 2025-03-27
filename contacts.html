@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarBullet</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./contacts.html" class="active">Контакты</a></li>
+                <li><a href="./about.html">О нас</a></li>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./changes.html">Изменения</a></li>
+                <li><a href="./shop.html">Магазин</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-info">
+        <h1>Контактная информация</h1>
+        <p>Телефон: +7 123 456 7890</p>
+        <p>Электронная почта: example@example.com</p>
+    </section>
+
+    <div id="cart-icon" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; font-size: 30px;">
+        🛒
+        <span id="cart-count">0</span>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-cart" class="close">×</span>
+            <h2>Корзина</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th>Цена</th>
+                        <th>Количество</th>
+                        <th>Итого</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Содержимое корзины будет добавлено динамически -->
+                </tbody>
+            </table>
+            <div>
+                <label for="full-name">ФИО:</label>
+                <input type="text" id="full-name">
+            </div>
+            <div>
+                <label for="phone-number">Телефон:</label>
+                <input type="text" id="phone-number">
+            </div>
+            <button id="checkout-btn">Оформить заказ</button>
+        </div>
+    </div>
+
+<!-- Замените существующие теги script на эти -->
+<script type="module" src="./js/supabase.js"></script>
+<script type="module" src="./js/main.js"></script>
+    <div id="notification-container"></div>
+</body>
+</html>
