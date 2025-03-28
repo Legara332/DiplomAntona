@@ -10,11 +10,16 @@
     <header>
         <nav>
             <ul>
-                <li><a href="./contacts.html">Контакты</a></li>
-                <li><a href="./about.html">О нас</a></li>
-                <li><a href="./index.html" class="active">Главная</a></li>
-                <li><a href="./changes.html">Изменения</a></li>
-                <li><a href="./shop.html">Магазин</a></li>
+                <div class="nav-center-group">
+                    <li><a href="./contacts.html">Контакты</a></li>
+                    <li><a href="./about.html">О нас</a></li>
+                    <li><a href="./index.html" class="active">Главная</a></li>
+                    <li><a href="./changes.html">Изменения</a></li>
+                    <li><a href="./shop.html">Магазин</a></li>
+                </div>
+                <li class="play-button-container">
+                    <a href="https://warthunder.ru/ru/play4free?r=wiki#/" class="play-button" target="_blank">Играть</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -30,7 +35,7 @@
         <h3 onclick="toggleNestedImages(1)">Соединенные Штаты Америки</h3>
     </div>
     <div class="images-container" id="container-1" style="display:none;">
-            <img src="assets/images/image1.jpg" alt="Image 1" onclick="openModal('assets/images/image1.jpg')">
+            <img src="./tanks/us_m2a4.png" alt="Image 1" onclick="openModal('./tanks/us_m2a4.png')">
             <img src="assets/images/image2.jpg" alt="Image 2" onclick="openModal('assets/images/image2.jpg')">
             <img src="assets/images/image3.jpg" alt="Image 3" onclick="openModal('assets/images/image3.jpg')">
             <img src="assets/images/image4.jpg" alt="Image 4" onclick="openModal('assets/images/image4.jpg')">

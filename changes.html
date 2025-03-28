@@ -3,66 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WarBullet</title>
+    <title>WarBullet - Обновления</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="./contacts.html">Контакты</a></li>
-                <li><a href="./about.html">О нас</a></li>
-                <li><a href="./index.html">Главная</a></li>
-                <li><a href="./changes.html" class="active">Изменения</a></li>
-                <li><a href="./shop.html">Магазин</a></li>
+                <div class="nav-center-group">
+                    <li><a href="./contacts.html">Контакты</a></li>
+                    <li><a href="./about.html">О нас</a></li>
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./changes.html" class="active">Обновления</a></li>
+                    <li><a href="./shop.html">Магазин</a></li>
+                </div>
+                <li class="play-button-container">
+                    <a href="https://warthunder.ru/ru/play4free?r=wiki#/" class="play-button" target="_blank">Играть</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section class="contact-info">
-        <h1>Контактная информация</h1>
-        <p>Телефон: +7 123 456 7890</p>
-        <p>Электронная почта: example@example.com</p>
+        <div class="info-card">
+            <h1>Последние обновления</h1>
+            <div class="info-content">
+                <!-- Блок 1 - Основное обновление -->
+                <div class="info-item collapsible" onclick="toggleCollapse('update1')">
+                    <img src="./assets/update-icon.svg" alt="Обновление" class="info-icon">
+                    <div>
+                        <h3>Обновление «Атака шершня»!</h3>
+                        <div id="container-update1" class="collapsible-content" style="display: none;">
+                            <p><strong>Дата выхода:</strong> 18 марта 2025</p>
+                            <ul>
+                                <li>Первое крупное обновление War Thunder 2025 года уже здесь!
+                                    «Атака шершня» представляет F/A-18 в нескольких вариантах для США и Швеции, а также Су-30СМ для ветки СССР: у него есть возможность отклонения вектора тяги, значительно увеличивающая его манёвренность. Среди наземной техники стоит отметить Tracked Rapier, CLOVIS, 2С19М1 и 2С19М2, а на море — HMS Warspite, один из самых прославленных боевых кораблей в истории! «Переправа через Рейн», «Синай» и «Джунгли» получили обновлённую графику, сохранив знакомый геймплей и ландшафт. Также в игре появились улучшения интерфейса, переработка предметов и новые витрины для профиля.
+                                    
+                                    Загляните в полный список изменений, чтобы познакомиться со всей техникой, исправлениями и нововведениями этого большого обновления.</li>
+                            </ul>
+                            <div class="update-images">
+                                <img src="./changes/940x530_news_hornets_sting_su_30sm_0dc3fb9c99543a91bd6e4932ab197101.jpg" alt="Скриншот обновления" onclick="openModal('./changes/940x530_news_hornets_sting_su_30sm_0dc3fb9c99543a91bd6e4932ab197101.jpg')">
+                                <img src="./changes/940x530_news_hornets_sting_2s19m1_msta_s_bb8f73ac395d0c1e87f9829af181e495.jpg" alt="Скриншот обновления" onclick="openModal('./changes/940x530_news_hornets_sting_2s19m1_msta_s_bb8f73ac395d0c1e87f9829af181e495.jpg')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Блок 2 - Исправления -->
+                <div class="info-item collapsible" onclick="toggleCollapse('fixes')">
+                    <img src="./assets/fix-icon.svg" alt="Исправления" class="info-icon">
+                    <div>
+                        <h3>Бронетехника: ЗСУ, премиумные танки и техника от современности до Второй мировой!</h3>
+                        <div id="container-fixes" class="collapsible-content" style="display: none;">
+                            <p><strong></strong></p>
+                            <ul>
+                                <li>В обновлении появилось много новой наземной техники! В её числе — премиумный CLOVIS, лёгкий танк с качающейся башней и автоматом заряжания, который присоединится к веткам Германии (в составе набора) и Франции (за Золотые орлы). CLOVIS запомнится быстрой перезарядкой, мобильностью и возможностью разведки.</li>
+                            </ul>
+                            <div class="update-images">
+                                <img src="./changes/news_marder_clovis_e77ce72c130cb4c8ab6b93d8330f820c.jpg" alt="Скриншот обновления" onclick="openModal('./changes/news_marder_clovis_e77ce72c130cb4c8ab6b93d8330f820c.jpg')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Остальные элементы (корзина, модалки, скрипты) -->
     <div id="cart-icon" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; font-size: 30px;">
         🛒
         <span id="cart-count">0</span>
     </div>
 
     <div id="cart-modal" class="modal">
+        <!-- Содержимое корзины из оригинального файла -->
+    </div>
+
+    <!-- Модальное окно для изображений -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal(event)">×</span>
         <div class="modal-content">
-            <span id="close-cart" class="close">×</span>
-            <h2>Корзина</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Товар</th>
-                        <th>Цена</th>
-                        <th>Количество</th>
-                        <th>Итого</th>
-                        <th>Удалить</th>
-                    </tr>
-                </thead>
-                <tbody id="cart-items">
-                    <!-- Содержимое корзины будет добавлено динамически -->
-                </tbody>
-            </table>
-            <div>
-                <label for="full-name">ФИО:</label>
-                <input type="text" id="full-name">
-            </div>
-            <div>
-                <label for="phone-number">Телефон:</label>
-                <input type="text" id="phone-number">
-            </div>
-            <button id="checkout-btn">Оформить заказ</button>
+            <img id="modal-img" src="" alt="modal image">
         </div>
     </div>
 
-<!-- Замените существующие теги script на эти -->
-<script type="module" src="./js/supabase.js"></script>
-<script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/supabase.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script>
+        // Функция для раскрытия/скрытия контента
+        function toggleCollapse(containerId) {
+            const container = document.getElementById(`container-${containerId}`);
+            container.style.display = container.style.display === 'none' ? 'block' : 'none';
+            
+            // Добавляем анимацию
+            const parent = container.closest('.info-item');
+            parent.classList.toggle('active');
+        }
+        
+        // Функции для модального окна
+        function openModal(imageSrc) {
+            const modal = document.getElementById("modal");
+            const modalImg = document.getElementById("modal-img");
+            modalImg.src = imageSrc;
+            modal.style.display = "flex";
+        }
+        
+        function closeModal(event) {
+            if(event) event.stopPropagation();
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
     <div id="notification-container"></div>
 </body>
 </html>

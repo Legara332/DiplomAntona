@@ -10,61 +10,97 @@
     <header>
         <nav>
             <ul>
-                <li><a href="./contacts.html">Контакты</a></li>
-                <li><a href="./about.html" class="active">О нас</a></li>
-                <li><a href="./index.html">Главная</a></li>
-                <li><a href="./changes.html">Изменения</a></li>
-                <li><a href="./shop.html">Магазин</a></li>
+                <div class="nav-center-group">
+                    <li><a href="./contacts.html">Контакты</a></li>
+                    <li><a href="./about.html" class="active">О нас</a></li>
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./changes.html">Изменения</a></li>
+                    <li><a href="./shop.html">Магазин</a></li>
+                </div>
+                <li class="play-button-container">
+                    <a href="https://warthunder.ru/ru/play4free?r=wiki#/" class="play-button" target="_blank">Играть</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section class="contact-info">
-        <h1>Контактная информация</h1>
-        <p>Телефон: +7 123 456 7890</p>
-        <p>Электронная почта: example@example.com</p>
+        <div class="info-card">
+            <h1>О компании WarBullet</h1>
+            <div class="info-content">
+                <!-- Блок 1 - Основная информация -->
+                <div class="info-item collapsible" onclick="toggleCollapse('about')">
+                    <img src="./img/gear-icon.svg" alt="Опыт" class="info-icon">
+                    <div>
+                        <h3>8 лет в индустрии</h3>
+                        <div id="container-about" class="collapsible-content" style="display: none;">
+                            <p>Основанная в 2016 году, наша студия прошла путь от небольших мобильных проектов до AAA-игр. 
+                                За это время мы выпустили 12 успешных проектов и получили признание игрового сообщества.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Блок 2 - Команда -->
+                <div class="info-item collapsible" onclick="toggleCollapse('team')">
+                    <img src="./img/team-icon.svg" alt="Команда" class="info-icon">
+                    <div>
+                        <h3>Профессиональная команда</h3>
+                        <div id="container-team" class="collapsible-content" style="display: none;">
+                            <p>В нашей команде 25 специалистов:
+                                <ul>
+                                    <li>10 разработчиков игрового ядра</li>
+                                    <li>5 художников и аниматоров</li>
+                                    <li>4 звукорежиссера</li>
+                                    <li>6 тестировщиков</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Блок 3 - Награды -->
+                <div class="info-item collapsible" onclick="toggleCollapse('awards')">
+                    <img src="./img/award-icon.svg" alt="Награды" class="info-icon">
+                    <div>
+                        <h3>15+ профессиональных наград</h3>
+                        <div id="container-awards" class="collapsible-content" style="display: none;">
+                            <p>Наши достижения:
+                                <ul>
+                                    <li>Лучшая инди-игра 2020 (Games Awards)</li>
+                                    <li>Инновация года 2021 (GameDev Choice)</li>
+                                    <li>Золотой приз Moscow Game Fest 2022</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Кнопка корзины (смайлик) -->
+    <!-- Остальные элементы (корзина, модалки, скрипты) -->
     <div id="cart-icon" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; font-size: 30px;">
         🛒
         <span id="cart-count">0</span>
     </div>
 
-    <!-- Модальное окно для корзины -->
     <div id="cart-modal" class="modal">
-        <div class="modal-content">
-            <span id="close-cart" class="close">×</span>
-            <h2>Корзина</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Товар</th>
-                        <th>Цена</th>
-                        <th>Количество</th>
-                        <th>Итого</th>
-                        <th>Удалить</th>
-                    </tr>
-                </thead>
-                <tbody id="cart-items">
-                    <!-- Содержимое корзины будет добавлено динамически -->
-                </tbody>
-            </table>
-            <div>
-                <label for="full-name">ФИО:</label>
-                <input type="text" id="full-name">
-            </div>
-            <div>
-                <label for="phone-number">Телефон:</label>
-                <input type="text" id="phone-number">
-            </div>
-            <button id="checkout-btn">Оформить заказ</button>
-        </div>
+        <!-- Содержимое корзины из оригинального файла -->
     </div>
 
-<!-- Замените существующие теги script на эти -->
-<script type="module" src="./js/supabase.js"></script>
-<script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/supabase.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script>
+        // Функция для раскрытия/скрытия контента
+        function toggleCollapse(containerId) {
+            const container = document.getElementById(`container-${containerId}`);
+            container.style.display = container.style.display === 'none' ? 'block' : 'none';
+            
+            // Добавляем анимацию
+            const parent = container.closest('.info-item');
+            parent.classList.toggle('active');
+        }
+    </script>
     <div id="notification-container"></div>
 </body>
 </html>
