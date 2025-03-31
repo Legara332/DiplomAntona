@@ -1,4 +1,3 @@
-/* Общие стили для body */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -6,14 +5,12 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-/* Стили для шапки */
 header {
     background-color: #333;
     color: white;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 header nav ul {
     list-style: none;
     display: flex;
@@ -23,12 +20,10 @@ header nav ul {
     padding: 0;
     position: relative;
 }
-
 .nav-center-group {
     display: flex;
     gap: 20px;
 }
-
 .play-button-container {
     margin-left: auto;
     position: absolute;
@@ -40,11 +35,9 @@ header nav ul li a {
     font-weight: bold;
     transition: color 0.3s;
 }
-
 header nav ul li a:hover {
-    color: #4CAF50;  /* Добавим эффект при наведении */
+    color: #4CAF50;
 }
-
 .gallery {
     display: flex;
     flex-direction: column;
@@ -52,8 +45,8 @@ header nav ul li a:hover {
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
-
 .gallery-container {
     width: 100%;
     min-height: 150px;
@@ -66,23 +59,19 @@ header nav ul li a:hover {
     transition: all 0.3s;
     display: flex;
     flex-direction: column;
-    position: relative; /* Для позиционирования элементов */
-    background-size: cover; /* Растягиваем фон */
+    position: relative;
+    background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
 }
-
-
 .gallery-container:hover {
     transform: scale(1.02);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
-
-/* Фотография контейнера, которая занимает всю площадь */
 .gallery-container .image {
     width: 100%;
-    height: 200px; /* Высота контейнера */
-    background-size: contain; /* Масштабирует изображение внутри контейнера */
+    height: 200px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     cursor: zoom-in;
@@ -91,19 +80,13 @@ header nav ul li a:hover {
 .gallery-container .image:hover {
     transform: scale(1.02);
 }
-
-/* Для заголовка */
 .gallery-container h3 {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 .gallery-container h3:hover {
     background-color: #f8f8f8;
 }
-
-
-/* Текст внутри контейнера */
 h3 {
     font-size: 18px;
     margin: 10px;
@@ -112,28 +95,25 @@ h3 {
     text-align: center;
     border-radius: 0 0 10px 10px;
 }
-
-/* Изображения под контейнерами */
 .images-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
-
 .images-container img {
-    width: calc(33% - 10px); /* Каждое изображение занимает 1/3 ширины */
+    width: calc(33% - 10px);
     height: 120px;
     object-fit: cover;
     border-radius: 5px;
     cursor: pointer;
 }
-
 .images-container img:hover {
-    transform: scale(1.1);  /* Увеличение изображения при наведении */
+    transform: scale(1.1);
 }
-
-/* Стили для модальных окон */
 .modal {
     display: none;
     position: fixed;
@@ -147,24 +127,51 @@ h3 {
     z-index: 1000;
     cursor: pointer;
 }
-
 .modal-content {
-    background-color: white;
-    padding: 30px;
-    max-width: 700px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    max-width: 90%;
+    max-height: 90vh;
+    background-color: transparent;
 }
-
-.modal img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    max-width: 90%;
+    max-height: 90vh;
+    background-color: transparent;
 }
-
+.modal-content img {
+    max-width: 60%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.modal-text {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    .modal-content {
+        flex-direction: column;
+    }
+    .modal-content img {
+        max-width: 100%;
+        max-height: 50vh;
+    }
+    .modal-text {
+        max-width: 100%;
+        margin-top: 15px;
+    }
+}
 .close {
     position: absolute;
     top: 10px;
@@ -173,7 +180,6 @@ h3 {
     cursor: pointer;
     color: #333;
 }
-
 #cart-icon {
     position: fixed;
     bottom: 20px;
@@ -190,11 +196,9 @@ h3 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
-
 #cart-icon:hover {
     transform: scale(1.1);
 }
-
 #cart-count {
     position: absolute;
     top: -5px;
@@ -206,33 +210,20 @@ h3 {
     font-size: 14px;
     font-weight: bold;
 }
-
 #cart-modal.show {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
 }
-
 #cart-modal .modal-content {
-    width: 90%; /* Занимает 90% ширины экрана */
-    max-width: 800px; /* Максимальная ширина */
-    min-width: 300px; /* Минимальная широка для мобилок */
-    overflow-y: auto; /* Прокрутка при переполнении */
-    max-height: 90vh; /* Максимальная высота */
+    width: 90%;
+    max-width: 800px;
+    min-width: 300px;
+    overflow-y: auto;
+    max-height: 90vh;
   }
-
 #cart-items td {
     padding: 10px;
     text-align: center;
 }
-
 button {
     background-color: #4CAF50;
     color: white;
@@ -242,19 +233,15 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 button:hover {
     background-color: #45a049;
 }
-
-/* Стили для уведомлений */
 #notification-container {
     position: fixed;
     top: 20px;
     right: 20px;
     z-index: 9999;
 }
-
 .notification {
     background-color: #4CAF50;
     color: white;
@@ -264,12 +251,10 @@ button:hover {
     opacity: 0;
     animation: fadeIn 0.5s forwards;
 }
-
 .notification.hide {
     opacity: 0;
     animation: fadeOut 0.5s forwards;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -278,7 +263,6 @@ button:hover {
         opacity: 1;
     }
 }
-
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -287,19 +271,30 @@ button:hover {
         opacity: 0;
     }
 }
-
-/* Адаптивность */
 @media (max-width: 768px) {
     #cart-modal table {
-        font-size: 14px; /* Уменьшаем шрифт */
-      }
-      #cart-modal th, 
-      #cart-modal td {
-        padding: 8px; /* Уменьшаем отступы */
-      }
-      #cart-modal .modal-content {
-        padding: 15px; /* Уменьшаем внутренние отступы */
-      }
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+    }
+    #cart-modal th, 
+    #cart-modal td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    #cart-modal .modal-content {
+        background: white;
+        border-radius: 12px;
+        padding: 25px;
+        width: 90%;
+        max-width: 800px;
+        max-height: 80vh;
+        overflow-y: auto;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        position: relative;
+        animation: modalSlideIn 0.3s forwards;
+    }
     .gallery {
         flex-direction: column;
         align-items: center;
@@ -318,84 +313,130 @@ button:hover {
         margin: 0;
     }
 }
-/* Стили для магазина */
 .shop {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 25px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
-
 .product-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    border: 1px solid #eaeaea;
 }
-
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
 .product-card img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 8px;
+    border-bottom: 1px solid #f0f0f0;
 }
-
+.product-info {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
 .product-card p {
-    margin: 10px 0;
+    margin: 0 0 10px;
+    color: #333;
 }
-
+.product-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    min-height: 44px;
+}
+.product-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #4CAF50;
+    margin: 10px 0 15px;
+}
+.product-actions {
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #f5f5f5;
+}
 .quantity-controls {
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
     margin: 15px 0;
+    gap: 8px;
 }
-
 .quantity-controls button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quantity-controls button:hover {
     background-color: #4CAF50;
     color: white;
-    width: 25px;
-    height: 35px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
 }
-
-.quantity-controls button:hover {
-    background-color: #45a049;
-}
-
 .product-quantity {
     width: 50px;
-    padding: 5px;
     text-align: center;
+    padding: 5px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
 }
-
-.product-quantity:focus {
-    outline: none;
-    border-color: #4CAF50;
-}
-
 .btn-primary {
-    background-color: #4CAF50;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
     color: white;
-    padding: 10px 20px;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
-
 .btn-primary:hover {
-    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+.popular-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff4444;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    .shop {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding: 15px;
+    }
 }
 #notification-container {
     position: fixed;
@@ -403,7 +444,6 @@ button:hover {
     right: 20px;
     z-index: 9999;
 }
-
 .notification {
     background-color: #4CAF50;
     color: white;
@@ -413,12 +453,10 @@ button:hover {
     opacity: 0;
     animation: fadeIn 0.5s forwards;
 }
-
 .notification.hide {
     opacity: 0;
     animation: fadeOut 0.5s forwards;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -427,7 +465,6 @@ button:hover {
         opacity: 1;
     }
 }
-
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -436,7 +473,6 @@ button:hover {
         opacity: 0;
     }
 }
-
 #cart-modal .modal-content {
     background: #ffffff;
     border-radius: 16px;
@@ -448,32 +484,25 @@ button:hover {
     opacity: 0;
     animation: modalSlideIn 0.3s forwards;
 }
-
 @keyframes modalSlideIn {
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
-
 #cart-modal table {
     width: 100%;
     border-collapse: collapse;
     margin: 1rem 0;
 }
-
 #cart-modal th {
-    background: #f8f9fa;
-    padding: 12px;
-    text-align: left;
-    border-bottom: 2px solid #e9ecef;
+    background-color: #f8f9fa;
+    font-weight: 600;
 }
-
 #cart-modal td {
     padding: 12px;
     border-bottom: 1px solid #e9ecef;
 }
-
 #cart-modal input[type="text"] {
     width: 100%;
     box-sizing: border-box; /* Учитываем padding */
@@ -483,32 +512,34 @@ button:hover {
     margin: 8px 0;
     transition: border-color 0.3s;
 }
-
-#cart-modal input[type="text"]:focus {
-    border-color: #4CAF50;
-    outline: none;
-}
-
-#checkout-btn {
-    background: #4CAF50;
+#cart-modal input[type="text"] {
     width: 100%;
-    padding: 14px;
-    margin-top: 1rem;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: transform 0.2s;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-
+#cart-modal .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+#checkout-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+}
 #checkout-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(76,175,80,0.3);
 }
-
 .remove-item {
     background: #ff4444 !important;
 }
-
 .decrease-qty, .increase-qty {
     background: #6c757d !important;
     width: 30px !important;
@@ -517,7 +548,6 @@ button:hover {
     align-items: center;
     justify-content: center;
 }
-
 .loader {
     width: 20px;
     height: 20px;
@@ -528,40 +558,31 @@ button:hover {
     margin: 0 auto;
     border-top-color: transparent;
 }
-
 @keyframes rotation {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
 .checkmark {
     color: #4CAF50;
     font-size: 24px;
     animation: checkmarkScale 0.5s ease-out;
 }
-
 @keyframes checkmarkScale {
     0% { transform: scale(0); }
     90% { transform: scale(1.2); }
     100% { transform: scale(1); }
 }
-
-/* Стили для типов уведомлений */
 .notification.success {
     background: #4CAF50;
 }
-
 .notification.error {
     background: #ff4444;
 }
-/* Подсветка активной страницы */
 header nav ul li a.active {
-    font-size: 1.2em; /* Увеличиваем шрифт */
-    color: #4CAF50 !important; /* Цвет акцента */
+    font-size: 1.2em;
+    color: #4CAF50 !important;
     position: relative;
   }
-  
-  /* Полоска под активной ссылкой */
   header nav ul li a.active::after {
     content: "";
     position: absolute;
@@ -571,7 +592,6 @@ header nav ul li a.active {
     height: 2px;
     background-color: #4CAF50;
   }
-  /* Стили для информационных карточек */
 .info-card {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -585,20 +605,17 @@ header nav ul li a.active {
     opacity: 0;
     animation: cardAppear 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
-
 @keyframes cardAppear {
     to {
         transform: translateY(0);
         opacity: 1;
     }
 }
-
 .info-content {
     display: grid;
     gap: 25px;
     padding: 20px 0;
 }
-
 .info-item {
     display: flex;
     align-items: center;
@@ -608,18 +625,15 @@ header nav ul li a.active {
     border-radius: 12px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .info-item:hover {
     transform: translateX(10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
-
 .info-icon {
     width: 32px;
     height: 32px;
     filter: drop-shadow(0 2px 4px rgba(76, 175, 80, 0.3));
 }
-
 .contact-info h1 {
     text-align: center;
     color: #2c3e50;
@@ -627,7 +641,6 @@ header nav ul li a.active {
     margin-bottom: 30px;
     position: relative;
 }
-
 .contact-info h1::after {
     content: '';
     position: absolute;
@@ -639,61 +652,50 @@ header nav ul li a.active {
     background: #4CAF50;
     border-radius: 2px;
 }
-
 @media (max-width: 768px) {
     .info-card {
         margin: 20px;
         padding: 25px;
     }
-    
     .info-item {
         flex-direction: column;
         text-align: center;
         gap: 10px;
     }
 }
-/* Стили для раскрывающихся блоков */
 .collapsible {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
 .collapsible:hover {
     background-color: #f5f5f5;
 }
-
 .collapsible-content {
     padding: 0 18px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-
 .info-item.active {
     background-color: #e8f5e9;
     transform: scale(1.02);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
 .info-item.active .collapsible-content {
     display: block !important;
     animation: fadeIn 0.3s;
 }
-
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 .info-item ul {
     margin: 10px 0;
     padding-left: 20px;
 }
-
 .info-item li {
     margin: 8px 0;
     color: #666;
 }
-/* Стили для кнопки Играть */
 .play-button {
     background: #ff4444;
     color: white !important;
@@ -706,13 +708,11 @@ header nav ul li a.active {
     position: relative;
     overflow: hidden;
 }
-
 .play-button:hover {
     background: #ff3333;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 68, 68, 0.5);
 }
-
 .play-button::after {
     content: '';
     position: absolute;
@@ -728,12 +728,9 @@ header nav ul li a.active {
     );
     transition: all 0.5s;
 }
-
 .play-button:hover::after {
     left: 100%;
 }
-
-/* Для мобильной адаптации */
 @media (max-width: 768px) {
     .play-button {
         margin-top: 10px;
@@ -757,12 +754,10 @@ header nav ul li a.active {
     overflow: hidden;
     display: inline-block;
 }
-
 .play-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 68, 68, 0.6);
 }
-
 .play-button::before {
     content: '';
     position: absolute;
@@ -778,12 +773,9 @@ header nav ul li a.active {
     );
     transition: all 0.5s ease;
 }
-
 .play-button:hover::before {
     left: 100%;
 }
-
-/* Для мобильной адаптации */
 @media (max-width: 768px) {
     header nav ul {
         flex-direction: column;
@@ -805,14 +797,12 @@ header nav ul li a.active {
         padding: 10px 25px;
     }
 }
-/* Дополнительные стили для страницы обновлений */
 .update-images {
     display: flex;
     gap: 15px;
     margin-top: 20px;
     flex-wrap: wrap;
 }
-
 .update-images img {
     width: calc(50% - 8px);
     height: 180px;
@@ -821,19 +811,16 @@ header nav ul li a.active {
     cursor: pointer;
     transition: transform 0.3s;
 }
-
 .update-images img:hover {
     transform: scale(1.03);
 }
-
 .teaser-video {
     margin-top: 20px;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
 }
-
 .teaser-video iframe {
     position: absolute;
     top: 0;
@@ -842,24 +829,107 @@ header nav ul li a.active {
     height: 100%;
     border-radius: 8px;
 }
-
 .info-item h3 {
     color: #2c3e50;
     margin-bottom: 5px;
 }
-
 .collapsible-content p {
     margin: 10px 0;
     color: #555;
     line-height: 1.6;
 }
-
 .collapsible-content strong {
     color: #2c3e50;
 }
-
 @media (max-width: 768px) {
     .update-images img {
         width: 100%;
+    }
+}
+#cart-modal .quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+#cart-modal .quantity-controls button {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cart-modal .item-qty {
+    min-width: 20px;
+    text-align: center;
+}
+.tank-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eaeaea;
+    width: 280px;
+    margin: 0px;
+}
+.tank-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+.tank-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+.tank-info {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.tank-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    text-align: center;
+}
+.tank-country {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.tanks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.tank-description {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.4;
+    padding: 0 10px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    #cart-modal .modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+    #cart-modal th, 
+    #cart-modal td {
+        padding: 8px;
+        font-size: 14px;
     }
 }

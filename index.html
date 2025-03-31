@@ -14,7 +14,7 @@
                     <li><a href="./contacts.html">Контакты</a></li>
                     <li><a href="./about.html">О нас</a></li>
                     <li><a href="./index.html" class="active">Главная</a></li>
-                    <li><a href="./changes.html">Изменения</a></li>
+                    <li><a href="./changes.html">Обновления</a></li>
                     <li><a href="./shop.html">Магазин</a></li>
                 </div>
                 <li class="play-button-container">
@@ -23,7 +23,7 @@
             </ul>
         </nav>
     </header>
-
+    <div class="gallery">
     <div class="gallery-container"
     style="background-image: url('./res/country_svg/country_usa.png');">
         <div 
@@ -35,244 +35,852 @@
         <h3 onclick="toggleNestedImages(1)">Соединенные Штаты Америки</h3>
     </div>
     <div class="images-container" id="container-1" style="display:none;">
-            <img src="./tanks/us_m2a4.png" alt="Image 1" onclick="openModal('./tanks/us_m2a4.png')">
-            <img src="assets/images/image2.jpg" alt="Image 2" onclick="openModal('assets/images/image2.jpg')">
-            <img src="assets/images/image3.jpg" alt="Image 3" onclick="openModal('assets/images/image3.jpg')">
-            <img src="assets/images/image4.jpg" alt="Image 4" onclick="openModal('assets/images/image4.jpg')">
-            <img src="assets/images/image5.jpg" alt="Image 5" onclick="openModal('assets/images/image5.jpg')">
-            <img src="assets/images/image6.jpg" alt="Image 6" onclick="openModal('assets/images/image6.jpg')">
-            <img src="assets/images/image7.jpg" alt="Image 7" onclick="openModal('assets/images/image7.jpg')">
-            <img src="assets/images/image8.jpg" alt="Image 8" onclick="openModal('assets/images/image8.jpg')">
-            <img src="assets/images/image9.jpg" alt="Image 9" onclick="openModal('assets/images/image9.jpg')">
-            <img src="assets/images/image10.jpg" alt="Image 10" onclick="openModal('assets/images/image10.jpg')">
-        </div>
-        <div class="gallery">
-            <div class="gallery-container"
-            style="background-image: url('./res/country_svg/country_germany.png');">
-                <div 
-                    class="image" 
-                    style="background-image: url('./res/country_svg/country_germany.svg');"
-                    data-full-image="./res/country_svg/country_germany.svg"
-                    onclick="openFullImage(event)"
-                ></div>
-                <h3 onclick="toggleNestedImages(2)">Германия</h3>
-            </div>
-            <div class="images-container" id="container-2" style="display:none;">
-            <img src="assets/images/image1.jpg" alt="Image 1" onclick="openModal('assets/images/image1.jpg')">
-            <img src="assets/images/image2.jpg" alt="Image 2" onclick="openModal('assets/images/image2.jpg')">
-            <img src="assets/images/image3.jpg" alt="Image 3" onclick="openModal('assets/images/image3.jpg')">
-            <img src="assets/images/image4.jpg" alt="Image 4" onclick="openModal('assets/images/image4.jpg')">
-            <img src="assets/images/image5.jpg" alt="Image 5" onclick="openModal('assets/images/image5.jpg')">
-            <img src="assets/images/image6.jpg" alt="Image 6" onclick="openModal('assets/images/image6.jpg')">
-            <img src="assets/images/image7.jpg" alt="Image 7" onclick="openModal('assets/images/image7.jpg')">
-            <img src="assets/images/image8.jpg" alt="Image 8" onclick="openModal('assets/images/image8.jpg')">
-            <img src="assets/images/image9.jpg" alt="Image 9" onclick="openModal('assets/images/image9.jpg')">
-            <img src="assets/images/image10.jpg" alt="Image 10" onclick="openModal('assets/images/image10.jpg')">
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M4 Sherman</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Основной средний танк США во Второй мировой войне, известный надежностью и массовым производством.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_ussr.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_ussr.svg');"
+data-full-image="./res/country_svg/country_ussr.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(3)">СССР</h3>
+</div>
+<div class="images-container" id="container-3" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M4 Sherman</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Основной средний танк США во Второй мировой войне, известный надежностью и массовым производством.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_britain.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_britain.svg');"
+data-full-image="./res/country_svg/country_britain.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(4)">Великобритания</h3>
+</div>
+<div class="images-container" id="container-4" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M4 Sherman</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Основной средний танк США во Второй мировой войне, известный надежностью и массовым производством.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_japan.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_japan.svg');"
+data-full-image="./res/country_svg/country_japan.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(5)">Япония</h3>
+</div>
+<div class="images-container" id="container-5" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M4 Sherman</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Основной средний танк США во Второй мировой войне, известный надежностью и массовым производством.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_germany.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_germany.svg');"
+data-full-image="./res/country_svg/country_germany.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(2)">Германия</h3>
+</div>
+<div class="images-container" id="container-2" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M4 Sherman</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Основной средний танк США во Второй мировой войне, известный надежностью и массовым производством.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_china.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_china.svg');"
+data-full-image="./res/country_svg/country_china.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(6)">Китай</h3>
+</div>
+<div class="images-container" id="container-6" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M4 Sherman</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Основной средний танк США во Второй мировой войне, известный надежностью и массовым производством.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_italy_kingdom.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_italy.svg');"
+data-full-image="./res/country_svg/country_italy.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(7)">Италия</h3>
+</div>
+<div class="images-container" id="container-7" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M4 Sherman</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Основной средний танк США во Второй мировой войне, известный надежностью и массовым производством.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_france.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_france.svg');"
+data-full-image="./res/country_svg/country_france.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(8)">Франция</h3>
+</div>
+<div class="images-container" id="container-8" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M4 Sherman</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Основной средний танк США во Второй мировой войне, известный надежностью и массовым производством.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_sweden.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_sweden.svg');"
+data-full-image="./res/country_svg/country_sweden.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(9)">Швеция</h3>
+</div>
+<div class="images-container" id="container-9" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M4 Sherman</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Основной средний танк США во Второй мировой войне, известный надежностью и массовым производством.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_israel.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_israel.svg');"
+data-full-image="./res/country_svg/country_israel.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(10)">Израиль</h3>
+</div>
+<div class="images-container" id="container-10" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+    Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M4 Sherman</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+    Основной средний танк США во Второй мировой войне, известный надежностью и массовым производством.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+    Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+    Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+    Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+    Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+</div>
+<div id="modal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal(event)">×</span>
+    <div class="modal-content">
+        <img id="modal-img" src="" alt="modal image">
+        <div class="modal-text" id="modal-description">
         </div>
     </div>
-    <div class="gallery">
-        <div class="gallery-container"
-        style="background-image: url('./res/country_svg/country_ussr.png');">
-            <div 
-                class="image" 
-                style="background-image: url('./res/country_svg/country_ussr.svg');"
-                data-full-image="./res/country_svg/country_ussr.svg"
-                onclick="openFullImage(event)"
-            ></div>
-            <h3 onclick="toggleNestedImages(3)">СССР</h3>
-        </div>
-        <div class="images-container" id="container-3" style="display:none;">
-            <img src="assets/images/image1.jpg" alt="Image 1" onclick="openModal('assets/images/image1.jpg')">
-            <img src="assets/images/image2.jpg" alt="Image 2" onclick="openModal('assets/images/image2.jpg')">
-            <img src="assets/images/image3.jpg" alt="Image 3" onclick="openModal('assets/images/image3.jpg')">
-            <img src="assets/images/image4.jpg" alt="Image 4" onclick="openModal('assets/images/image4.jpg')">
-            <img src="assets/images/image5.jpg" alt="Image 5" onclick="openModal('assets/images/image5.jpg')">
-            <img src="assets/images/image6.jpg" alt="Image 6" onclick="openModal('assets/images/image6.jpg')">
-            <img src="assets/images/image7.jpg" alt="Image 7" onclick="openModal('assets/images/image7.jpg')">
-            <img src="assets/images/image8.jpg" alt="Image 8" onclick="openModal('assets/images/image8.jpg')">
-            <img src="assets/images/image9.jpg" alt="Image 9" onclick="openModal('assets/images/image9.jpg')">
-            <img src="assets/images/image10.jpg" alt="Image 10" onclick="openModal('assets/images/image10.jpg')">
-        </div>
-    </div>
-    <div class="gallery">
-        <div class="gallery-container"
-        style="background-image: url('./res/country_svg/country_britain.png');">
-            <div 
-                class="image" 
-                style="background-image: url('./res/country_svg/country_britain.svg');"
-                data-full-image="./res/country_svg/country_britain.svg"
-                onclick="openFullImage(event)"
-            ></div>
-            <h3 onclick="toggleNestedImages(4)">Великобритания</h3>
-        </div>
-        <div class="images-container" id="container-4" style="display:none;">
-            <img src="assets/images/image1.jpg" alt="Image 1" onclick="openModal('assets/images/image1.jpg')">
-            <img src="assets/images/image2.jpg" alt="Image 2" onclick="openModal('assets/images/image2.jpg')">
-            <img src="assets/images/image3.jpg" alt="Image 3" onclick="openModal('assets/images/image3.jpg')">
-            <img src="assets/images/image4.jpg" alt="Image 4" onclick="openModal('assets/images/image4.jpg')">
-            <img src="assets/images/image5.jpg" alt="Image 5" onclick="openModal('assets/images/image5.jpg')">
-            <img src="assets/images/image6.jpg" alt="Image 6" onclick="openModal('assets/images/image6.jpg')">
-            <img src="assets/images/image7.jpg" alt="Image 7" onclick="openModal('assets/images/image7.jpg')">
-            <img src="assets/images/image8.jpg" alt="Image 8" onclick="openModal('assets/images/image8.jpg')">
-            <img src="assets/images/image9.jpg" alt="Image 9" onclick="openModal('assets/images/image9.jpg')">
-            <img src="assets/images/image10.jpg" alt="Image 10" onclick="openModal('assets/images/image10.jpg')">
-        </div>
-    </div>
-    <div class="gallery">
-        <div class="gallery-container"
-        style="background-image: url('./res/country_svg/country_japan.png');">
-            <div 
-                class="image" 
-                style="background-image: url('./res/country_svg/country_japan.svg');"
-                data-full-image="./res/country_svg/country_japan.svg"
-                onclick="openFullImage(event)"
-            ></div>
-            <h3 onclick="toggleNestedImages(5)">Япония</h3>
-        </div>
-        <div class="images-container" id="container-5" style="display:none;">
-            <img src="assets/images/image1.jpg" alt="Image 1" onclick="openModal('assets/images/image1.jpg')">
-            <img src="assets/images/image2.jpg" alt="Image 2" onclick="openModal('assets/images/image2.jpg')">
-            <img src="assets/images/image3.jpg" alt="Image 3" onclick="openModal('assets/images/image3.jpg')">
-            <img src="assets/images/image4.jpg" alt="Image 4" onclick="openModal('assets/images/image4.jpg')">
-            <img src="assets/images/image5.jpg" alt="Image 5" onclick="openModal('assets/images/image5.jpg')">
-            <img src="assets/images/image6.jpg" alt="Image 6" onclick="openModal('assets/images/image6.jpg')">
-            <img src="assets/images/image7.jpg" alt="Image 7" onclick="openModal('assets/images/image7.jpg')">
-            <img src="assets/images/image8.jpg" alt="Image 8" onclick="openModal('assets/images/image8.jpg')">
-            <img src="assets/images/image9.jpg" alt="Image 9" onclick="openModal('assets/images/image9.jpg')">
-            <img src="assets/images/image10.jpg" alt="Image 10" onclick="openModal('assets/images/image10.jpg')">
-        </div>
-    </div>
-    <div class="gallery">
-        <div class="gallery-container"
-        style="background-image: url('./res/country_svg/country_china.png');">
-            <div 
-                class="image" 
-                style="background-image: url('./res/country_svg/country_china.svg');"
-                data-full-image="./res/country_svg/country_china.svg"
-                onclick="openFullImage(event)"
-            ></div>
-            <h3 onclick="toggleNestedImages(6)">Китай</h3>
-        </div>
-        <div class="images-container" id="container-6" style="display:none;">
-            <img src="assets/images/image1.jpg" alt="Image 1" onclick="openModal('assets/images/image1.jpg')">
-            <img src="assets/images/image2.jpg" alt="Image 2" onclick="openModal('assets/images/image2.jpg')">
-            <img src="assets/images/image3.jpg" alt="Image 3" onclick="openModal('assets/images/image3.jpg')">
-            <img src="assets/images/image4.jpg" alt="Image 4" onclick="openModal('assets/images/image4.jpg')">
-            <img src="assets/images/image5.jpg" alt="Image 5" onclick="openModal('assets/images/image5.jpg')">
-            <img src="assets/images/image6.jpg" alt="Image 6" onclick="openModal('assets/images/image6.jpg')">
-            <img src="assets/images/image7.jpg" alt="Image 7" onclick="openModal('assets/images/image7.jpg')">
-            <img src="assets/images/image8.jpg" alt="Image 8" onclick="openModal('assets/images/image8.jpg')">
-            <img src="assets/images/image9.jpg" alt="Image 9" onclick="openModal('assets/images/image9.jpg')">
-            <img src="assets/images/image10.jpg" alt="Image 10" onclick="openModal('assets/images/image10.jpg')">
-        </div>
-    </div>
-    <div class="gallery">
-        <div class="gallery-container"
-        style="background-image: url('./res/country_svg/country_italy_kingdom.png');">
-            <div 
-                class="image" 
-                style="background-image: url('./res/country_svg/country_italy.svg');"
-                data-full-image="./res/country_svg/country_italy.svg"
-                onclick="openFullImage(event)"
-            ></div>
-            <h3 onclick="toggleNestedImages(7)">Италия</h3>
-        </div>
-        <div class="images-container" id="container-7" style="display:none;">
-            <img src="assets/images/image1.jpg" alt="Image 1" onclick="openModal('assets/images/image1.jpg')">
-            <img src="assets/images/image2.jpg" alt="Image 2" onclick="openModal('assets/images/image2.jpg')">
-            <img src="assets/images/image3.jpg" alt="Image 3" onclick="openModal('assets/images/image3.jpg')">
-            <img src="assets/images/image4.jpg" alt="Image 4" onclick="openModal('assets/images/image4.jpg')">
-            <img src="assets/images/image5.jpg" alt="Image 5" onclick="openModal('assets/images/image5.jpg')">
-            <img src="assets/images/image6.jpg" alt="Image 6" onclick="openModal('assets/images/image6.jpg')">
-            <img src="assets/images/image7.jpg" alt="Image 7" onclick="openModal('assets/images/image7.jpg')">
-            <img src="assets/images/image8.jpg" alt="Image 8" onclick="openModal('assets/images/image8.jpg')">
-            <img src="assets/images/image9.jpg" alt="Image 9" onclick="openModal('assets/images/image9.jpg')">
-            <img src="assets/images/image10.jpg" alt="Image 10" onclick="openModal('assets/images/image10.jpg')">
-        </div>
-    </div>
-    <div class="gallery">
-        <div class="gallery-container"
-        style="background-image: url('./res/country_svg/country_france.png');">
-            <div 
-                class="image" 
-                style="background-image: url('./res/country_svg/country_france.svg');"
-                data-full-image="./res/country_svg/country_france.svg"
-                onclick="openFullImage(event)"
-            ></div>
-            <h3 onclick="toggleNestedImages(8)">Франция</h3>
-        </div>
-        <div class="images-container" id="container-8" style="display:none;">
-            <img src="assets/images/image1.jpg" alt="Image 1" onclick="openModal('assets/images/image1.jpg')">
-            <img src="assets/images/image2.jpg" alt="Image 2" onclick="openModal('assets/images/image2.jpg')">
-            <img src="assets/images/image3.jpg" alt="Image 3" onclick="openModal('assets/images/image3.jpg')">
-            <img src="assets/images/image4.jpg" alt="Image 4" onclick="openModal('assets/images/image4.jpg')">
-            <img src="assets/images/image5.jpg" alt="Image 5" onclick="openModal('assets/images/image5.jpg')">
-            <img src="assets/images/image6.jpg" alt="Image 6" onclick="openModal('assets/images/image6.jpg')">
-            <img src="assets/images/image7.jpg" alt="Image 7" onclick="openModal('assets/images/image7.jpg')">
-            <img src="assets/images/image8.jpg" alt="Image 8" onclick="openModal('assets/images/image8.jpg')">
-            <img src="assets/images/image9.jpg" alt="Image 9" onclick="openModal('assets/images/image9.jpg')">
-            <img src="assets/images/image10.jpg" alt="Image 10" onclick="openModal('assets/images/image10.jpg')">
-        </div>
-    </div>
-    <div class="gallery">
-        <div class="gallery-container"
-        style="background-image: url('./res/country_svg/country_sweden.png');">
-            <div 
-                class="image" 
-                style="background-image: url('./res/country_svg/country_sweden.svg');"
-                data-full-image="./res/country_svg/country_sweden.svg"
-                onclick="openFullImage(event)"
-            ></div>
-            <h3 onclick="toggleNestedImages(9)">Швеция</h3>
-        </div>
-        <div class="images-container" id="container-9" style="display:none;">
-            <img src="assets/images/image1.jpg" alt="Image 1" onclick="openModal('assets/images/image1.jpg')">
-            <img src="assets/images/image2.jpg" alt="Image 2" onclick="openModal('assets/images/image2.jpg')">
-            <img src="assets/images/image3.jpg" alt="Image 3" onclick="openModal('assets/images/image3.jpg')">
-            <img src="assets/images/image4.jpg" alt="Image 4" onclick="openModal('assets/images/image4.jpg')">
-            <img src="assets/images/image5.jpg" alt="Image 5" onclick="openModal('assets/images/image5.jpg')">
-            <img src="assets/images/image6.jpg" alt="Image 6" onclick="openModal('assets/images/image6.jpg')">
-            <img src="assets/images/image7.jpg" alt="Image 7" onclick="openModal('assets/images/image7.jpg')">
-            <img src="assets/images/image8.jpg" alt="Image 8" onclick="openModal('assets/images/image8.jpg')">
-            <img src="assets/images/image9.jpg" alt="Image 9" onclick="openModal('assets/images/image9.jpg')">
-            <img src="assets/images/image10.jpg" alt="Image 10" onclick="openModal('assets/images/image10.jpg')">
-        </div>
-    </div>
-    <div class="gallery">
-        <div class="gallery-container"
-        style="background-image: url('./res/country_svg/country_israel.png');">
-            <div 
-                class="image" 
-                style="background-image: url('./res/country_svg/country_israel.svg');"
-                data-full-image="./res/country_svg/country_israel.svg"
-                onclick="openFullImage(event)"
-            ></div>
-            <h3 onclick="toggleNestedImages(10)">Израиль</h3>
-        </div>
-        <div class="images-container" id="container-10" style="display:none;">
-            <img src="assets/images/image1.jpg" alt="Image 1" onclick="openModal('assets/images/image1.jpg')">
-            <img src="assets/images/image2.jpg" alt="Image 2" onclick="openModal('assets/images/image2.jpg')">
-            <img src="assets/images/image3.jpg" alt="Image 3" onclick="openModal('assets/images/image3.jpg')">
-            <img src="assets/images/image4.jpg" alt="Image 4" onclick="openModal('assets/images/image4.jpg')">
-            <img src="assets/images/image5.jpg" alt="Image 5" onclick="openModal('assets/images/image5.jpg')">
-            <img src="assets/images/image6.jpg" alt="Image 6" onclick="openModal('assets/images/image6.jpg')">
-            <img src="assets/images/image7.jpg" alt="Image 7" onclick="openModal('assets/images/image7.jpg')">
-            <img src="assets/images/image8.jpg" alt="Image 8" onclick="openModal('assets/images/image8.jpg')">
-            <img src="assets/images/image9.jpg" alt="Image 9" onclick="openModal('assets/images/image9.jpg')">
-            <img src="assets/images/image10.jpg" alt="Image 10" onclick="openModal('assets/images/image10.jpg')">
-        </div>
-    </div>
-
-    <!-- Модальное окно для отображения изображения -->
-    <div id="modal" class="modal" onclick="closeModal()">
-        <span class="close" onclick="closeModal(event)">×</span>
-        <div class="modal-content">
-            <img id="modal-img" src="" alt="modal image">
-            <p id="modal-description"></p>
-        </div>
-    </div>
-
-<!-- Замените существующие теги script на эти -->
+</div>
 <script type="module" src="./js/supabase.js"></script>
 <script type="module" src="./js/main.js"></script>
     <div id="notification-container"></div>

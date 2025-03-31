@@ -14,7 +14,7 @@
                     <li><a href="./contacts.html" class="active">Контакты</a></li>
                     <li><a href="./about.html">О нас</a></li>
                     <li><a href="./index.html">Главная</a></li>
-                    <li><a href="./changes.html">Изменения</a></li>
+                    <li><a href="./changes.html">Обновления</a></li>
                     <li><a href="./shop.html">Магазин</a></li>
                 </div>
                 <li class="play-button-container">
@@ -23,7 +23,6 @@
             </ul>
         </nav>
     </header>
-
     <section class="contact-info">
         <div class="info-card">
             <h1>Контактная информация</h1>
@@ -43,12 +42,10 @@
             </div>
         </div>
     </section>
-
     <div id="cart-icon" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; font-size: 30px;">
         🛒
         <span id="cart-count">0</span>
     </div>
-
     <div id="cart-modal" class="modal">
         <div class="modal-content">
             <span id="close-cart" class="close">×</span>
@@ -64,7 +61,6 @@
                     </tr>
                 </thead>
                 <tbody id="cart-items">
-                    <!-- Содержимое корзины будет добавлено динамически -->
                 </tbody>
             </table>
             <div>
@@ -72,14 +68,12 @@
                 <input type="text" id="full-name">
             </div>
             <div>
-                <label for="phone-number">Телефон:</label>
+                <label for="phone-number">Telegram для связи:</label>
                 <input type="text" id="phone-number">
             </div>
             <button id="checkout-btn">Оформить заказ</button>
         </div>
     </div>
-
-<!-- Замените существующие теги script на эти -->
 <script type="module" src="./js/supabase.js"></script>
 <script type="module" src="./js/main.js"></script>
     <div id="notification-container"></div>

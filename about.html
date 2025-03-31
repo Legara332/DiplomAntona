@@ -14,7 +14,7 @@
                     <li><a href="./contacts.html">Контакты</a></li>
                     <li><a href="./about.html" class="active">О нас</a></li>
                     <li><a href="./index.html">Главная</a></li>
-                    <li><a href="./changes.html">Изменения</a></li>
+                    <li><a href="./changes.html">Обновления</a></li>
                     <li><a href="./shop.html">Магазин</a></li>
                 </div>
                 <li class="play-button-container">
@@ -23,14 +23,12 @@
             </ul>
         </nav>
     </header>
-
     <section class="contact-info">
         <div class="info-card">
             <h1>О компании WarBullet</h1>
             <div class="info-content">
-                <!-- Блок 1 - Основная информация -->
                 <div class="info-item collapsible" onclick="toggleCollapse('about')">
-                    <img src="./img/gear-icon.svg" alt="Опыт" class="info-icon">
+                    <img src="./assets/opit.png" alt="Опыт" class="info-icon">
                     <div>
                         <h3>8 лет в индустрии</h3>
                         <div id="container-about" class="collapsible-content" style="display: none;">
@@ -39,10 +37,8 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Блок 2 - Команда -->
                 <div class="info-item collapsible" onclick="toggleCollapse('team')">
-                    <img src="./img/team-icon.svg" alt="Команда" class="info-icon">
+                    <img src="./assets/team.png" alt="Команда" class="info-icon">
                     <div>
                         <h3>Профессиональная команда</h3>
                         <div id="container-team" class="collapsible-content" style="display: none;">
@@ -57,10 +53,8 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Блок 3 - Награды -->
                 <div class="info-item collapsible" onclick="toggleCollapse('awards')">
-                    <img src="./img/award-icon.svg" alt="Награды" class="info-icon">
+                    <img src="./assets/kubok.png" alt="Награды" class="info-icon">
                     <div>
                         <h3>15+ профессиональных наград</h3>
                         <div id="container-awards" class="collapsible-content" style="display: none;">
@@ -77,26 +71,45 @@
             </div>
         </div>
     </section>
-
-    <!-- Остальные элементы (корзина, модалки, скрипты) -->
     <div id="cart-icon" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; font-size: 30px;">
         🛒
         <span id="cart-count">0</span>
     </div>
-
     <div id="cart-modal" class="modal">
-        <!-- Содержимое корзины из оригинального файла -->
+        <div class="modal-content">
+            <span id="close-cart" class="close">×</span>
+            <h2>Корзина</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th>Цена</th>
+                        <th>Количество</th>
+                        <th>Итого</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                </tbody>
+            </table>
+            <div>
+                <label for="full-name">ФИО:</label>
+                <input type="text" id="full-name">
+            </div>
+            <div>
+                <label for="phone-number">Telegram для связи:</label>
+                <input type="text" id="phone-number">
+            </div>
+            <button id="checkout-btn">Оформить заказ</button>
+        </div>
     </div>
 
     <script type="module" src="./js/supabase.js"></script>
     <script type="module" src="./js/main.js"></script>
     <script>
-        // Функция для раскрытия/скрытия контента
         function toggleCollapse(containerId) {
             const container = document.getElementById(`container-${containerId}`);
             container.style.display = container.style.display === 'none' ? 'block' : 'none';
-            
-            // Добавляем анимацию
             const parent = container.closest('.info-item');
             parent.classList.toggle('active');
         }

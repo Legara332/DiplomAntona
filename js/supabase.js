@@ -8,7 +8,14 @@ export const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 export async function saveOrder(orderData) {
     const { data, error } = await supabase
         .from('orders')
-        .insert([orderData])
+        .insert([{
+            customer_name: orderData.customer_name,
+            customer_phone: orderData.customer_phone,
+            total: orderData.total,
+            items: orderData.items,
+            status: 'new',
+            created_at: new Date().toISOString()
+        }])
         .select()
 
     if (error) throw error

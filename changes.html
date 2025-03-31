@@ -28,9 +28,8 @@
         <div class="info-card">
             <h1>Последние обновления</h1>
             <div class="info-content">
-                <!-- Блок 1 - Основное обновление -->
                 <div class="info-item collapsible" onclick="toggleCollapse('update1')">
-                    <img src="./assets/update-icon.svg" alt="Обновление" class="info-icon">
+                    <img src="./assets/obnova.png" alt="Обновление" class="info-icon">
                     <div>
                         <h3>Обновление «Атака шершня»!</h3>
                         <div id="container-update1" class="collapsible-content" style="display: none;">
@@ -48,10 +47,8 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Блок 2 - Исправления -->
                 <div class="info-item collapsible" onclick="toggleCollapse('fixes')">
-                    <img src="./assets/fix-icon.svg" alt="Исправления" class="info-icon">
+                    <img src="./assets/texnika.png" alt="Исправления" class="info-icon">
                     <div>
                         <h3>Бронетехника: ЗСУ, премиумные танки и техника от современности до Второй мировой!</h3>
                         <div id="container-fixes" class="collapsible-content" style="display: none;">
@@ -68,18 +65,38 @@
             </div>
         </div>
     </section>
-
-    <!-- Остальные элементы (корзина, модалки, скрипты) -->
     <div id="cart-icon" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer; font-size: 30px;">
         🛒
         <span id="cart-count">0</span>
     </div>
-
     <div id="cart-modal" class="modal">
-        <!-- Содержимое корзины из оригинального файла -->
+        <div class="modal-content">
+            <span id="close-cart" class="close">×</span>
+            <h2>Корзина</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th>Цена</th>
+                        <th>Количество</th>
+                        <th>Итого</th>
+                        <th>Удалить</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                </tbody>
+            </table>
+            <div>
+                <label for="full-name">ФИО:</label>
+                <input type="text" id="full-name">
+            </div>
+            <div>
+                <label for="phone-number">Telegram для связи:</label>
+                <input type="text" id="phone-number">
+            </div>
+            <button id="checkout-btn">Оформить заказ</button>
+        </div>
     </div>
-
-    <!-- Модальное окно для изображений -->
     <div id="modal" class="modal" onclick="closeModal()">
         <span class="close" onclick="closeModal(event)">×</span>
         <div class="modal-content">
@@ -90,17 +107,12 @@
     <script type="module" src="./js/supabase.js"></script>
     <script type="module" src="./js/main.js"></script>
     <script>
-        // Функция для раскрытия/скрытия контента
         function toggleCollapse(containerId) {
             const container = document.getElementById(`container-${containerId}`);
             container.style.display = container.style.display === 'none' ? 'block' : 'none';
-            
-            // Добавляем анимацию
             const parent = container.closest('.info-item');
             parent.classList.toggle('active');
         }
-        
-        // Функции для модального окна
         function openModal(imageSrc) {
             const modal = document.getElementById("modal");
             const modalImg = document.getElementById("modal-img");
