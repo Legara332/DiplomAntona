@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarBullet</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="nav-center-group">
+                    <li><a href="./contacts.html">Контакты</a></li>
+                    <li><a href="./about.html">О нас</a></li>
+                    <li><a href="./index.html" class="active">Главная</a></li>
+                    <li><a href="./changes.html">Обновления</a></li>
+                    <li><a href="./shop.html">Магазин</a></li>
+                </div>
+                <li class="play-button-container">
+                    <a href="https://warthunder.ru/ru/play4free?r=wiki#/" class="play-button" target="_blank">Играть</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="gallery">
+    <div class="gallery-container"
+    style="background-image: url('./res/country_svg/country_usa.png');">
+        <div 
+            class="image" 
+            style="background-image: url('./res/country_svg/country_usa.svg');"
+            data-full-image="./res/country_svg/country_usa.svg"
+            onclick="openFullImage(event)"
+        ></div>
+        <h3 onclick="toggleNestedImages(1)">Соединенные Штаты Америки</h3>
+    </div>
+    <div class="images-container" id="container-1" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2_medium.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский средний танк Medium Tank M2.
+Боевая масса: 17,2 т.
+Вооружение: 37-мм пушка M5, 8×7,62-мм пулемётов Browning M1919A4.
+Экипаж: 6 человек.
+Годы производства: 1939.">
+<div class="tank-info">
+<div class="tank-name">Medium Tank M2</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+    Средний танк конца 1930-х годов с многопулемётным вооружением, ставший переходной моделью перед созданием более совершенного M3 Lee. Имел слабую броню и устаревшую конструкцию, из-за чего быстро был снят с производства.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_lvt_a_1.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский плавающий танк LVT(A)(1)
+Боевая масса: 13,6 т
+Вооружение: 37-мм пушка M6, 3×7,62-мм пулемёта Browning M1919A4
+Экипаж: 6 человек
+Годы производства: 1942–1944">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+    Плавающий бронетранспортёр (амфибия) на базе LVT-2, вооружённый башней от лёгкого танка M5 Stuart. Использовался морской пехотой США для высадки на Тихоокеанском ТВД. Броня защищала только от лёгкого стрелкового оружия.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_halftrack_m13.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американская зенитная самоходная установка M13 MGMC
+Боевая масса: 9,3 т
+Вооружение: 2×12,7-мм пулемёта Browning M2HB в спаренной турели Maxson M33
+Экипаж: 5 человек
+Годы производства: 1942–1943">
+<div class="tank-info">
+<div class="tank-name">M13 MGMC</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+ЗСУ на шасси полугусеничного бронетранспортёра M3. Применялась для прикрытия войск от низколетящих самолётов. Позднее заменена на M16 MGMC с четырьмя пулемётами.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a2.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Боевая масса: 8,5 т
+Вооружение: 2×12,7-мм пулемёта Browning M2HB (в двух башнях)
+Экипаж: 3 человека
+Годы производства: 1935–1937">
+<div class="tank-info">
+<div class="tank-name">M2A2 Light Tank</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+Двухбашенный лёгкий танк 1930-х годов, прозванный «Mae West» из-за формы башен. Устарел к началу Второй мировой, но использовался в учебных целях.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m3_stuart.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский лёгкий танк M3 Stuart
+Боевая масса: 12,7 т
+Вооружение: 37-мм пушка M5, 3–5×7,62-мм пулемётов Browning M1919A4
+Экипаж: 4 человека
+Годы производства: 1941–1943">
+<div class="tank-info">
+<div class="tank-name">M3 Stuart</div>
+<div class="tank-country">США</div>
+<div class="tank-description">
+    Один из основных лёгких танков США в начале войны. Отличался высокой скоростью и надёжностью. Поставлялся по ленд-лизу в СССР и Великобританию, где получил прозвище «Stuart». К 1943 году уступил место более мощным машинам.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_ussr.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_ussr.svg');"
+data-full-image="./res/country_svg/country_ussr.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(3)">СССР</h3>
+</div>
+<div class="images-container" id="container-3" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/ussr_bt_5.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Советский лёгкий колёсно-гусеничный танк БТ-5
+Боевая масса: 11,5 т
+Вооружение: 45-мм пушка 20-К, 1×7,62-мм пулемёт ДТ
+Экипаж: 3 человека
+Годы производства: 1933–1934">
+<div class="tank-info">
+<div class="tank-name">БТ-5</div>
+<div class="tank-country">СССР</div>
+<div class="tank-description">
+Улучшенная версия БТ-2 с новой 45-мм пушкой. Участвовал в боях у озера Хасан, на Халхин-Голе и в начале Великой Отечественной войны. Мог двигаться на колёсах (по дорогам) и гусеницах (по бездорожью).
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/ussr_t_26_1940.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Советский лёгкий танк Т-26 (обр. 1933 г.)
+Боевая масса: 9,4 т
+Вооружение: 45-мм пушка 20-К, 2×7,62-мм пулемёта ДТ
+Экипаж: 3 человека
+Годы производства: 1933–1941">
+<div class="tank-info">
+<div class="tank-name">Т-26</div>
+<div class="tank-country">СССР</div>
+<div class="tank-description">
+Самый массовый танк РККА 1930-х годов. Участвовал в гражданской войне в Испании, советско-финской войне и начальном периоде ВОВ. Низкая подвижность и слабое бронирование делали его уязвимым к новым немецким танкам.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/ussr_t_26_4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Советский лёгкий танк Т-26-4 (артиллерийский вариант)
+Боевая масса: 10,5 т
+Вооружение: 76-мм пушка КТ-28 (короткоствольная), 2×7,62-мм пулемёта ДТ
+Экипаж: 3 человека
+Годы производства: 1933–1935 (малая серия)">
+<div class="tank-info">
+<div class="tank-name">M2A4 Light Tank</div>
+<div class="tank-country">СССР</div>
+<div class="tank-description">
+Экспериментальная модификация Т-26 с гаубичным вооружением для поддержки пехоты. Из-за ненадёжности орудия и перегруженности шасси серийно почти не выпускался.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/ussr_garford_putilov.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Российский бронеавтомобиль «Гарфордъ-Путилов»
+Боевая масса: 8,6 т
+Вооружение: 76-мм пушка обр. 1900 г., 3×7,62-мм пулемёта «Максим»
+Экипаж: 5–6 человек
+Годы производства: 1915–1917">
+<div class="tank-info">
+<div class="tank-name">Гарфордъ-Путилов</div>
+<div class="tank-country">СССР</div>
+<div class="tank-description">
+Тяжёлый броневик на шасси американского грузовика Garford. Использовался в Первой мировой и Гражданской войнах. Мощное вооружение, но низкая подвижность и перегруженное шасси.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/ussr_gaz_4m.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Советский лёгкий бронеавтомобиль ГАЗ-ААА (4М)
+Боевая масса: 2,3 т
+Вооружение: 1×7,62-мм пулемёт ДТ
+Экипаж: 2 человека
+Годы производства: 1934–1936">
+<div class="tank-info">
+<div class="tank-name">ГАЗ-ААА (4М)</div>
+<div class="tank-country">СССР</div>
+<div class="tank-description">
+Разведывательный броневик на базе грузовика ГАЗ-ААА. Участвовал в начале ВОВ, но слабое бронирование и вооружение ограничивали его применение.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/us_m2a4.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Советский лёгкий колёсно-гусеничный танк БТ-7
+Боевая масса: 13,9 т
+Вооружение: 45-мм пушка 20-К, 1–2×7,62-мм пулемёта ДТ
+Экипаж: 3 человека
+Годы производства: 1935–1940">
+<div class="tank-info">
+<div class="tank-name">БТ-7</div>
+<div class="tank-country">СССР</div>
+<div class="tank-description">
+Последняя серийная модификация линейки БТ. Участвовал в боях на Халхин-Голе, в Польше (1939), советско-финской войне и начале ВОВ. Высокая скорость, но слабая броня. Некоторые машины оснащались дизельным двигателем (БТ-7М).
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_britain.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_britain.svg');"
+data-full-image="./res/country_svg/country_britain.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(4)">Великобритания</h3>
+</div>
+<div class="images-container" id="container-4" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/uk_a_13_mk1.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Британский крейсерский танк A13 Mk.I
+Боевая масса: 14,2 т
+Вооружение: 40-мм пушка QF 2-pounder, 1×7,92-мм пулемёт Vickers
+Экипаж: 4 человека
+Годы производства: 1937–1939">
+<div class="tank-info">
+<div class="tank-name">A13 Mk.I</div>
+<div class="tank-country">Великобритания</div>
+<div class="tank-description">
+Первый британский крейсерский танк с подвеской Кристи, отличавшийся высокой подвижностью. Участвовал в боях во Франции (1940) и Северной Африке. Тонкая броня делала его уязвимым, но скорость позволяла эффективно маневрировать.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/uk_m3_stuart.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Британский лёгкий танк Stuart I (американский M3 Stuart в британской службе)
+Боевая масса: 12,7 т
+Вооружение: 37-мм пушка M5, 3×7,62-мм пулемёта Browning M1919A4
+Экипаж: 4 человека
+Годы производства: 1941–1942">
+<div class="tank-info">
+<div class="tank-name">Stuart I</div>
+<div class="tank-country">Великобритания</div>
+<div class="tank-description">
+Британское обозначение американского M3 Stuart. Применялся в Северной Африке, где за надёжность и скорость получил прозвище "Honey" ("Медок"). Позже заменён более мощными танками.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/uk_a17_mk_1_tetrarch.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Британский лёгкий танк Tetrarch I
+Боевая масса: 7,6 т
+Вооружение: 40-мм пушка QF 2-pounder, 1×7,92-мм пулемёт Besa
+Экипаж: 3 человека
+Годы производства: 1941–1942">
+<div class="tank-info">
+<div class="tank-name">Tetrarch I</div>
+<div class="tank-country">Великобритания</div>
+<div class="tank-description">
+Лёгкий разведывательный танк, разработанный для воздушной транспортировки (включая десантирование на планерах). Участвовал в операциях на Мадагаскаре (1942) и в Нормандии (1944). Слабая броня, но полезен для воздушно-десантных операций.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/uk_vickers_mk_6_aa_mk_1.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Британская зенитная самоходная установка Light AA Mk I
+Боевая масса: 5,2 т
+Вооружение: 4×7,92-мм пулемёта Besa в башне
+Экипаж: 3 человека
+Годы производства: 1939–1941">
+<div class="tank-info">
+<div class="tank-name">Light AA Mk I</div>
+<div class="tank-country">Великобритания</div>
+<div class="tank-description">
+Ранняя британская ЗСУ на шасси лёгкого танка Mk VI. Из-за слабой огневой мощи была неэффективна против самолётов и в основном использовалась для обучения.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/uk_mark_v.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Британский средний танк Mark V
+Боевая масса: 14 т
+Вооружение: 1×57-мм пушка QF 6-pounder, 4×7,7-мм пулемёта Hotchkiss
+Экипаж: 8 человек
+Годы производства: 1918">
+<div class="tank-info">
+<div class="tank-name">Mark V</div>
+<div class="tank-country">Великобритания</div>
+<div class="tank-description">
+Танк позднего периода Первой мировой войны с улучшенной подвижностью. Использовался в ограниченных количествах в Гражданской войне в России и колониальных конфликтах. К Второй мировой войне устарел.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/uk_daimler_mk_2.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Британский бронеавтомобиль Daimler Mk II
+Боевая масса: 7,6 т
+Вооружение: 40-мм пушка QF 2-pounder, 1×7,92-мм пулемёт Besa
+Экипаж: 3 человека
+Годы производства: 1941–1944">
+<div class="tank-info">
+<div class="tank-name">Daimler Mk II</div>
+<div class="tank-country">Великобритания</div>
+<div class="tank-description">
+Высокомобильная разведывательная машина с полным приводом и низким профилем. Применялась в Северной Африке, Италии и Северо-Западной Европе. Ценилась за надёжность и огневую мощь.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_japan.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_japan.svg');"
+data-full-image="./res/country_svg/country_japan.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(5)">Япония</h3>
+</div>
+<div class="images-container" id="container-5" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/jp_type_95_ha_go.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Японский лёгкий танк Type 95 Ha-Go
+Боевая масса: 7,4 т
+Вооружение: 37-мм пушка Type 94, 2×7,7-мм пулемёта Type 97
+Экипаж: 3 человека
+Годы производства: 1936-1943">
+<div class="tank-info">
+<div class="tank-name">Type 95 "Ha-Go"</div>
+<div class="tank-country">Япония</div>
+<div class="tank-description">
+Основной лёгкий танк японской императорской армии. Активно применялся в Китае, Бирме и на Тихоокеанском ТВД. Имел слабую броню, но отличался хорошей маневренностью в условиях джунглей. К 1942 году устарел против американских танков.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/jp_type_89b_i_go_otsu.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Японский средний танк Type 89 I-Go Ko
+Боевая масса: 12,8 т
+Вооружение: 57-мм пушка Type 90, 2×6,5-мм пулемёта Type 91
+Экипаж: 4 человека
+Годы производства: 1929-1937">
+<div class="tank-info">
+<div class="tank-name">Type 89 "I-Go Ko"</div>
+<div class="tank-country">Япония</div>
+<div class="tank-description">
+Первый японский серийный средний танк. Модификация "Ko" имела улучшенную подвеску и двигатель. Применялся в боях в Китае, но к началу войны на Тихом океане считался морально устаревшим. Тонкая броня и низкая скорость ограничивали его боевую ценность.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/jp_type_4_ho_ro.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Японская самоходная гаубица Type 4 Ho-Ro
+Боевая масса: 16,3 т
+Вооружение: 150-мм гаубица Type 38
+Экипаж: 5 человек
+Годы производства: 1944-1945">
+<div class="tank-info">
+<div class="tank-name"> Type 4 "Ho-Ro"</div>
+<div class="tank-country">Япония</div>
+<div class="tank-description">
+САУ на шасси среднего танка Type 97 "Chi-Ha". Использовалась для огневой поддержки на Филиппинах и Окинаве. Имела мощное орудие, но слабую бронезащиту и низкую мобильность. Выпущено всего около 12 единиц.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/jp_type_94.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Японский танкетка Type 94
+Боевая масса: 3,4 т
+Вооружение: 1×6,5-мм или 7,7-мм пулемёт
+Экипаж: 2 человека
+Годы производства: 1935-1937">
+<div class="tank-info">
+<div class="tank-name">Type 94</div>
+<div class="tank-country">Япония</div>
+<div class="tank-description">
+Сверхлёгкая бронемашина для разведки и поддержки пехоты. Широко применялась в Китае. Имела крайне слабую защиту - броня пробивалась даже крупнокалиберными пулемётами. Часто использовалась как тягач.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/jp_type_98_ke_ni.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Японский лёгкий танк Type 98 Ke-Ni
+Боевая масса: 7,2 т
+Вооружение: 37-мм пушка Type 100, 1×7,7-мм пулемёт Type 97
+Экипаж: 3 человека
+Годы производства: 1942-1943">
+<div class="tank-info">
+<div class="tank-name">Type 98 "Ke-Ni"</div>
+<div class="tank-country">Япония</div>
+<div class="tank-description">
+Попытка модернизации "Ha-Go" с новой подвеской и усиленной бронёй. Выпущено около 100 единиц. Недостаточное вооружение и бронирование не позволяли эффективно бороться с американскими M3/M5 Stuart.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/jp_type_97_chi_ha.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Японский средний танк Type 97 Chi-Ha
+Боевая масса: 15,8 т
+Вооружение: 57-мм пушка Type 97, 2×7,7-мм пулемёта Type 97
+Экипаж: 4 человека
+Годы производства: 1938-1943">
+<div class="tank-info">
+<div class="tank-name">Type 97 "Chi-Ha"</div>
+<div class="tank-country">Япония</div>
+<div class="tank-description">
+Основной средний танк Японии во Второй мировой войне. Модернизированная версия с 47-мм пушкой получила обозначение "Shinhoto Chi-Ha". Участвовал в боях по всему Тихоокеанскому региону, но уступал американским M4 Sherman по всем параметрам.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_germany.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_germany.svg');"
+data-full-image="./res/country_svg/country_germany.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(2)">Германия</h3>
+</div>
+<div class="images-container" id="container-2" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/germ_garford_putilov.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Трофейный бронеавтомобиль Garford-Beute (на базе русского Гарфорд-Путилов)
+Боевая масса: 8,6 т
+Вооружение: 76,2-мм пушка обр. 1900 г., 3×7,62-мм пулемёта Максим
+Экипаж: 5-6 человек
+Годы эксплуатации в германской армии: 1916-1918">
+<div class="tank-info">
+<div class="tank-name">Garford-Beute</div>
+<div class="tank-country">Германия</div>
+<div class="tank-description">
+Трофейные русские бронеавтомобили "Гарфорд-Путилов", захваченные немецкими войсками в ходе Первой мировой войны. Использовались преимущественно на Восточном фронте. Главным преимуществом была мощная 76-мм пушка, но низкая подвижность и перегруженность шасси оставались серьёзными недостатками.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/germ_beutepanzer_mk_iv.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Трофейный танк Beutepanzer IV (на базе советского Т-34)
+Боевая масса: 26,5 т
+Вооружение: 76,2-мм пушка Ф-34, 2×7,62-мм пулемёта ДТ
+Экипаж: 4 человека
+Годы эксплуатации в вермахте: 1941-1945">
+<div class="tank-info">
+<div class="tank-name">Beutepanzer IV</div>
+<div class="tank-country">Германия</div>
+<div class="tank-description">
+Захваченные немецкими войсками советские танки Т-34, использовавшиеся в составе вермахта и войск СС. Некоторые машины подвергались модернизации - устанавливались немецкие радиостанции, командирские башенки. Применялись на всех фронтах, особенно в 1941-1942 годах.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/germ_a7v.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Немецкий тяжёлый танк A7V
+Боевая масса: 30-33 т
+Вооружение: 57-мм пушка Maxim-Nordenfelt, 6×7,92-мм пулемётов MG.08
+Экипаж: 18-23 человека
+Годы производства: 1917-1918">
+<div class="tank-info">
+<div class="tank-name">A7V</div>
+<div class="tank-country">Германия</div>
+<div class="tank-description">
+Первый и единственный серийный немецкий танк Первой мировой войны. Всего построено 20 машин. Участвовал в нескольких боях весной 1918 года. Характеризовался неудобством управления, плохой проходимостью, но мощным вооружением. После войны все оставшиеся A7V были уничтожены по условиям Версальского договора.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/germ_flakpanzer_i_ausf_a.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Немецкая зенитная САУ Flakpanzer I
+Боевая масса: 5,5 т
+Вооружение: 20-мм автоматическая пушка Flak 38
+Экипаж: 3 человека
+Годы производства: 1941">
+<div class="tank-info">
+<div class="tank-name">Flakpanzer I</div>
+<div class="tank-country">Германия</div>
+<div class="tank-description">
+Импровизированная зенитная самоходка на шасси лёгкого танка Pz.Kpfw. I Ausf. A. Разработана как временная мера для ПВО танковых частей. Всего переоборудовано около 24 машин. Применялась в Северной Африке и на Восточном фронте в 1941-1942 годах.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/germ_flakpanzer_38t_gepard.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Немецкая зенитная САУ Flakpanzer 38(t)
+Боевая масса: 9,8 т
+Вооружение: 20-мм автоматическая пушка Flak 38
+Экипаж: 4 человека
+Годы производства: 1943-1944">
+<div class="tank-info">
+<div class="tank-name">Flakpanzer 38(t)</div>
+<div class="tank-country">Германия</div>
+<div class="tank-description">
+Зенитная самоходка на шасси чешского танка Pz.Kpfw. 38(t). Открытая установка орудия делала расчёт уязвимым. Всего выпущено 141 единица. Применялась для прикрытия танковых частей от авиации, но из-за слабой огневой мощи была малоэффективна против современных самолётов.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/germ_sturmpanzer_ii.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Немецкая САУ 15cm sIG 33 B Sfl.
+Боевая масса: 11,5 т
+Вооружение: 150-мм пехотное орудие sIG 33
+Экипаж: 4 человека
+Годы производства: 1940">
+<div class="tank-info">
+<div class="tank-name">15cm sIG 33 B Sfl.</div>
+<div class="tank-country">Германия</div>
+<div class="tank-description">
+Самоходная артиллерийская установка на шасси французского танка Hotchkiss H38. Разработана для мобильной огневой поддержки пехоты. Всего переоборудовано около 24 машин. Применялась во Франции и на Восточном фронте в 1941-1942 годах. Главный недостаток - открытая установка орудия и слабое бронирование.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_china.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_china.svg');"
+data-full-image="./res/country_svg/country_china.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(6)">Китай</h3>
+</div>
+<div class="images-container" id="container-6" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/cn_m8_greyhound.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Китайский бронеавтомобиль M8 Greyhound (LAC)
+Боевая масса: 7,9 т
+Вооружение: 37-мм пушка M6, 1×7,62-мм пулемёт Browning M1919A4
+Экипаж: 4 человека
+Годы эксплуатации в Китае: 1944-1950-е">
+<div class="tank-info">
+<div class="tank-name">M8 Greyhound (LAC)</div>
+<div class="tank-country">Китай</div>
+<div class="tank-description">
+Американские бронеавтомобили M8, поставленные в Китай по ленд-лизу. Использовались гоминьдановскими войсками против японцев, а позже - в гражданской войне против коммунистов. После 1949 года некоторое количество оставалось на Тайване.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/cn_t_26_1940.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Китайский лёгкий танк Т-26 (советские поставки)
+Боевая масса: 9,4 т
+Вооружение: 45-мм пушка 20-К, 2×7,62-мм пулемёта ДТ
+Экипаж: 3 человека
+Годы эксплуатации в Китае: 1938-1949">
+<div class="tank-info">
+<div class="tank-name">Т-26</div>
+<div class="tank-country">Китай</div>
+<div class="tank-description">
+Советские танки Т-26, поставленные Китаю в 1938-1939 гг. (около 82 единиц). Участвовали в войне с Японией. После 1945 года использовались обеими сторонами в гражданской войне. Некоторые дожили до 1950-х в учебных частях.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/cn_sdkfz_222_early.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Китайский бронеавтомобиль Sd.Kfz.222 (трофейные)
+Боевая масса: 4,8 т
+Вооружение: 20-мм пушка KwK 30/38, 1×7,92-мм пулемёт MG34
+Экипаж: 3 человека
+Годы эксплуатации в Китае: 1945-1949">
+<div class="tank-info">
+<div class="tank-name">Sd.Kfz.222</div>
+<div class="tank-country">Китай</div>
+<div class="tank-description">
+Немецкие бронеавтомобили, захваченные у японцев (которые получили их от Германии). Использовались гоминьдановцами в гражданской войне. Из-за нехватки запчастей быстро вышли из строя.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/cn_m8_scott.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Китайская САУ M8 HMC (американские поставки)
+Боевая масса: 15,7 т
+Вооружение: 75-мм гаубица M116
+Экипаж: 4 человека
+Годы эксплуатации в Китае: 1944-1950-е">
+<div class="tank-info">
+<div class="tank-name">M8 HMC</div>
+<div class="tank-country">Китай</div>
+<div class="tank-description">
+Американские самоходки на шасси M5 Stuart, поставленные по ленд-лизу (около 25 единиц). Применялись против японцев. После 1949 года несколько штук использовались НОАК вплоть до 1960-х как учебные.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/cn_type_97_chi_ha.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Китайский средний танк Type 97 Chi-Ha (трофейные)
+Боевая масса: 15,8 т
+Вооружение: 57-мм пушка Type 97 (позже заменена на 47-мм)
+Экипаж: 4 человека
+Годы эксплуатации в Китае: 1945-1950-е">
+<div class="tank-info">
+<div class="tank-name">Type 97 "Chi-Ha"</div>
+<div class="tank-country">Китай</div>
+<div class="tank-description">
+Японские танки, захваченные как гоминьдановцами, так и коммунистами. Использовались в гражданской войне. НОАК применяла их даже в Корейской войне (1950-1953), где они безнадёжно устарели.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/cn_su_76m_1943.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Китайская САУ SU-76M (советские поставки)
+Боевая масса: 10,5 т
+Вооружение: 76-мм пушка ЗИС-3
+Экипаж: 4 человека
+Годы эксплуатации в Китае: 1946-1960-е">
+<div class="tank-info">
+<div class="tank-name">SU-76M</div>
+<div class="tank-country">Китай</div>
+<div class="tank-description">
+Советские САУ, переданные КПК в 1946-1949 гг. (около 300 единиц). Стали основой бронетанковых сил НОАК в гражданской войне. Участвовали в Корейской войне. Сняты с вооружения в конце 1950-х.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_italy_kingdom.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_italy.svg');"
+data-full-image="./res/country_svg/country_italy.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(7)">Италия</h3>
+</div>
+<div class="images-container" id="container-7" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/it_ab_41.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Итальянский бронеавтомобиль AB 41
+Боевая масса: 7,5 т
+Вооружение: 20-мм пушка Breda 35, 2×8-мм пулемёта Breda 38
+Экипаж: 4 человека
+Годы производства: 1941–1943">
+<div class="tank-info">
+<div class="tank-name">AB 41</div>
+<div class="tank-country">Италия</div>
+<div class="tank-description">
+Основной бронеавтомобиль итальянской армии во Второй мировой войне. Отличался хорошей проходимостью благодаря полному приводу и двум постам управления. Использовался в Северной Африке, на Балканах и в Италии. Всего выпущено около 550 единиц.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/it_l6.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Итальянский лёгкий танк L6/40
+Боевая масса: 6,8 т
+Вооружение: 20-мм пушка Breda 35, 1×8-мм пулемёт Breda 38
+Экипаж: 2 человека
+Годы производства: 1941–1943">
+<div class="tank-info">
+<div class="tank-name">L6/40</div>
+<div class="tank-country">Италия</div>
+<div class="tank-description">
+Лёгкий танк для разведки и поддержки пехоты. Применялся в Северной Африке, СССР и Италии. Слабое бронирование и вооружение ограничивали его боевую ценность. Выпущено около 440 единиц. Некоторые машины переоборудовались в САУ Semovente L6 da 47/32.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/it_as_42_metropolitana.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Итальянский бронеавтомобиль AS 42 Sahariana
+Боевая масса: 6,5 т
+Вооружение: 20-мм пушка Solothurn S-18/100 или 47-мм орудие
+Экипаж: 4–5 человек
+Годы производства: 1942–1943">
+<div class="tank-info">
+<div class="tank-name">AS 42 "Sahariana"</div>
+<div class="tank-country">Италия</div>
+<div class="tank-description">
+Специализированная машина для действий в пустыне на шасси AB 41. Использовалась в Северной Африке для дальних рейдов и разведки. Вооружалась различными орудиями, включая противотанковые пушки. Выпущено около 200 единиц.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/it_l3_cc.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Итальянская огнемётная танкетка L3/33 CC
+Боевая масса: 3,2 т
+Вооружение: Огнемёт (запас огнесмеси 500 л)
+Экипаж: 2 человека
+Годы производства: 1935–1936">
+<div class="tank-info">
+<div class="tank-name">L3/33 CC</div>
+<div class="tank-country">Италия</div>
+<div class="tank-description">
+Огнемётная модификация танкетки L3/33. Применялась в Эфиопии и Испании. Огнемёт имел дальность действия до 40 м. Из-за уязвимости и слабого бронирования использовалась ограниченно. Всего переоборудовано около 30 машин.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/it_39m_csaba.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Венгерский бронеавтомобиль 39M Csaba
+Боевая масса: 5,9 т
+Вооружение: 20-мм пушка 36M, 1×8-мм пулемёт 34/37M
+Экипаж: 3 человека
+Годы производства: 1939–1944">
+<div class="tank-info">
+<div class="tank-name">Csaba</div>
+<div class="tank-country">Италия</div>
+<div class="tank-description">
+Разведывательный бронеавтомобиль венгерской армии с оригинальной конструкцией (два поста управления). Использовался на Восточном фронте и для внутренней безопасности. Всего выпущено около 170 единиц. Отличался хорошей подвижностью, но слабой бронёй.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/it_m11_39.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Итальянский средний танк M11/39
+Боевая масса: 11 т
+Вооружение: 37-мм пушка Vickers-Termi (в корпусе), 2×8-мм пулемёта Breda 38 (в башне)
+Экипаж: 3 человека
+Годы производства: 1939–1940">
+<div class="tank-info">
+<div class="tank-name">M11/39</div>
+<div class="tank-country">Италия</div>
+<div class="tank-description">
+Переходная модель с устаревшей компоновкой (основное орудие в корпусе). Применялся в Северной Африке, где показал полную несостоятельность против британских танков. Всего выпущено около 100 единиц. Быстро заменён на M13/40.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_france.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_france.svg');"
+data-full-image="./res/country_svg/country_france.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(8)">Франция</h3>
+</div>
+<div class="images-container" id="container-8" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/fr_amc_34.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Французский кавалерийский танк AMC 34 (YR)
+Боевая масса: 9,7 т
+Вооружение: 47-мм пушка SA34, 1×7,5-мм пулемёт Reibel
+Экипаж: 2 человека
+Годы производства: 1934-1935">
+<div class="tank-info">
+<div class="tank-name">AMC 34 (YR)</div>
+<div class="tank-country">Франция</div>
+<div class="tank-description">
+Экспериментальный кавалерийский танк с оригинальной подвеской. Разрабатывался как разведывательная машина, но из-за тесноты и ненадёжности был отвергнут армией. Несколько экземпляров использовались в учебных целях до 1940 года.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/fr_hotchkiss_h35.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Французский лёгкий танк Hotchkiss H.35
+Боевая масса: 11,4 т
+Вооружение: 37-мм пушка SA18, 1×7,5-мм пулемёт Reibel
+Экипаж: 2 человека
+Годы производства: 1936-1940">
+<div class="tank-info">
+<div class="tank-name">Hotchkiss H.35</div>
+<div class="tank-country">Франция</div>
+<div class="tank-description">
+Основной лёгкий танк французской армии с литой бронёй. Участвовал во Французской кампании 1940 года. После капитуляции Франции 550 единиц использовались вермахтом как Pz.Kpfw. 35H(f), часть - в учебных целях до 1944 года.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/fr_saint_chamond.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Французский тяжёлый танк Saint-Chamond
+Боевая масса: 22 т
+Вооружение: 75-мм пушка TR, 4×8-мм пулемёта Hotchkiss
+Экипаж: 8 человек
+Годы производства: 1917-1918">
+<div class="tank-info">
+<div class="tank-name">Saint-Chamond</div>
+<div class="tank-country">Франция</div>
+<div class="tank-description">
+Уникальный танк Первой мировой с электромеханической трансмиссией и передним расположением орудия. Из-за плохой проходимости применялся ограниченно. Все уцелевшие машины были сняты с вооружения в 1919 году.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/fr_renault_r39.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Французский лёгкий танк Renault R.35 (SA38)
+Боевая масса: 10,6 т
+Вооружение: 37-мм пушка SA38 (новый ствол с улучшенной баллистикой)
+Экипаж: 2 человека
+Годы производства: 1938-1940">
+<div class="tank-info">
+<div class="tank-name">R.35 (SA38)</div>
+<div class="tank-country">Франция</div>
+<div class="tank-description">
+Модернизированная версия R.35 с новой пушкой. Составлял основу французских танковых частей в 1940 году. После поражения Франции 840 единиц использовались немцами как Pz.Kpfw. 35R(f), преимущественно для охраны аэродромов.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/fr_citroen_kegresse_p4t.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Французская зенитная САУ Panhard P.7.T AA
+Боевая масса: 6,8 т
+Вооружение: 2×25-мм автоматические пушки Hotchkiss
+Экипаж: 4 человека
+Годы производства: 1939-1940">
+<div class="tank-info">
+<div class="tank-name">P.7.T AA</div>
+<div class="tank-country">Франция</div>
+<div class="tank-description">
+Экспериментальная ЗСУ на шасси бронеавтомобиля Panhard 178. Разрабатывалась для замены устаревших буксируемых зениток. В серию не пошла из-за поражения Франции. Единственный прототип захвачен немцами в 1940 году.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/fr_amr_35_zt3.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Французский истребитель танков AMR 35 ZT3
+Боевая масса: 6,7 т
+Вооружение: 25-мм противотанковая пушка SA-L Mle.1934
+Экипаж: 3 человека
+Годы производства: 1937-1939">
+<div class="tank-info">
+<div class="tank-name">AMR 35 ZT3</div>
+<div class="tank-country">Франция</div>
+<div class="tank-description">
+Специализированная противотанковая САУ на базе разведывательного танка AMR 35. Разрабатывалась как мобильное средство борьбы с бронетехникой. Применялась в 1940 году, но из-за слабого орудия оказалась малоэффективной против немецких танков.
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_sweden.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_sweden.svg');"
+data-full-image="./res/country_svg/country_sweden.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(9)">Швеция</h3>
+</div>
+<div class="images-container" id="container-9" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/sw_strv_m31.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Шведский лёгкий танк Strv m/31
+Боевая масса: 11,5 т
+Вооружение: 37-мм пушка Bofors, 2×8-мм пулемёта ksp m/14-29
+Экипаж: 4 человека
+Годы производства: 1935–1938">
+<div class="tank-info">
+<div class="tank-name">Strv m/31</div>
+<div class="tank-country">Швеция</div>
+<div class="tank-description">
+Первый современный шведский танк, созданный на основе немецкого проекта Räder-Raupen Kampfwagen. Имел комбинированное колёсно-гусеничное шасси. Использовался в основном для обучения экипажей. К 1942 году признан устаревшим, но оставался на службе до конца войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/sw_strv_m38.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Шведский лёгкий танк Strv m/38
+Боевая масса: 8,5 т
+Вооружение: 37-мм пушка Bofors, 2×8-мм пулемёта ksp m/36
+Экипаж: 3 человека
+Годы производства: 1938–1939">
+<div class="tank-info">
+<div class="tank-name">Strv m/38</div>
+<div class="tank-country">Швеция</div>
+<div class="tank-description">
+Улучшенная версия Strv m/37 (самого массового шведского танка предвоенного периода). Отличался усиленной подвеской и изменённой башней. Составлял основу шведских танковых сил в начале Второй мировой войны.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/sw_pvlvv_fm42.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Шведская зенитная самоходная установка Pvlvv fm/42
+Боевая масса: 10,2 т
+Вооружение: 40-мм автоматическая пушка Bofors L/60
+Экипаж: 4 человека
+Годы производства: 1942–1944">
+<div class="tank-info">
+<div class="tank-name">Pvlvv fm/42</div>
+<div class="tank-country">Швеция</div>
+<div class="tank-description">
+Первая шведская специализированная ЗСУ на шасси танка Strv m/41. Разработана для защиты войск от низколетящих самолётов. Оставалась на вооружении до 1950-х годов.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/sw_ikv_72.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Шведская самоходная артиллерийская установка Ikv 72
+Боевая масса: 12 т
+Вооружение: 75-мм гаубица m/40
+Экипаж: 4 человека
+Годы производства: 1943–1944">
+<div class="tank-info">
+<div class="tank-name">Ikv 72</div>
+<div class="tank-country">Швеция</div>
+<div class="tank-description">
+Лёгкая САУ для поддержки пехоты на шасси танка Strv m/41. Открытая рубка обеспечивала хороший обзор, но делала экипаж уязвимым. Активно использовалась в послевоенный период.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/sw_vickers_mk_e_37.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Шведский лёгкий танк Vickers Mk.E (шведское обозначение Strv m/31)
+Боевая масса: 6,8 т
+Вооружение: 37-мм пушка Bofors, 1×6,5-мм пулемёт m/14
+Экипаж: 3 человека
+Годы эксплуатации: 1931–1940">
+<div class="tank-info">
+<div class="tank-name">Vickers Mk.E</div>
+<div class="tank-country">Швеция</div>
+<div class="tank-description">
+Швеция закупила лицензию на британский Vickers Mk.E, но существенно модернизировала его, установив новую башню и шведское вооружение. Эти машины стали первыми современными танками в шведской армии.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/sw_bt_42.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Финская штурмовая САУ BT-42
+Боевая масса: 15 т
+Вооружение: 114-мм гаубица QF 4.5-inch Howitzer
+Экипаж: 3 человека
+Годы производства: 1942–1943">
+<div class="tank-info">
+<div class="tank-name">BT-42</div>
+<div class="tank-country">Швеция</div>
+<div class="tank-description">
+Легкий танк 1930-х годов с 37-мм пушкой, использовался на ранних этапах Второй мировой войны.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="gallery">
+<div class="gallery-container"
+style="background-image: url('./res/country_svg/country_israel.png');">
+<div 
+class="image" 
+style="background-image: url('./res/country_svg/country_israel.svg');"
+data-full-image="./res/country_svg/country_israel.svg"
+onclick="openFullImage(event)"
+></div>
+<h3 onclick="toggleNestedImages(10)">Израиль</h3>
+</div>
+<div class="images-container" id="container-10" style="display:none;">
+<div class="tank-card">
+<img src="./tanks/il_m_51.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Израильский средний танк M-51 (Super Sherman)
+Боевая масса: 39 т
+Вооружение: 105-мм пушка CN-105-57, 2×7,62-мм пулемёта
+Экипаж: 4 человека
+Годы эксплуатации: 1962–1980-е">
+<div class="tank-info">
+<div class="tank-name">M-51</div>
+<div class="tank-country">Израиль</div>
+<div class="tank-description">
+Модернизированная версия американского M4 Sherman с французской 105-мм пушкой. Разработан специально для борьбы с арабскими Т-54/55. Участвовал в Шестидневной войне (1967) и Войне Судного дня (1973). Отличался мощным орудием, но слабой защитой.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/il_amx_13_75.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Американский легкий танк M2A4. Боевая масса: 11,6 т. Вооружение: 37-мм пушка M5, 5×7,62-мм пулемётов Browning M1919A4. Экипаж: 4 человека. Годы производства: 1939-1941.">
+<div class="tank-info">
+<div class="tank-name">AMX-13</div>
+<div class="tank-country">Израиль</div>
+<div class="tank-description">
+Французские лёгкие танки, закупленные Израилем. Модернизированы установкой 105-мм орудия. Использовались как разведывательные машины и в роли лёгких танков поддержки. Применялись во всех арабо-израильских конфликтах до 1973 года.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/il_tcm_20.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Израильская зенитная самоходная установка TCM-20
+Боевая масса: 5 т
+Вооружение: 2×20-мм автоматические пушки Hispano-Suiza HS.404
+Экипаж: 3 человека
+Годы эксплуатации: 1950–1980-е">
+<div class="tank-info">
+<div class="tank-name">TCM-20</div>
+<div class="tank-country">Израиль</div>
+<div class="tank-description">
+Самодельная ЗСУ на шасси различных бронетранспортёров. Создана путём установки спаренных авиационных пушек. Эффективно использовалась против низколетящих целей в Шестидневной войне и Войне Судного дня.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/il_m109.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Израильская самоходная гаубица M109 Doher
+Боевая масса: 23,5 т
+Вооружение: 155-мм гаубица M126
+Экипаж: 6 человек
+Годы эксплуатации: с 1969 года">
+<div class="tank-info">
+<div class="tank-name">M109 Doher</div>
+<div class="tank-country">Израиль</div>
+<div class="tank-description">
+Американские САУ, значительно модернизированные в Израиле. Получили улучшенную систему управления огнём и дополнительную броню. Составляют основу израильской самоходной артиллерии, участвовали во всех конфликтах с 1973 года.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/il_m48a1_patton_iii.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Израильский основной боевой танк Magach 1
+Боевая масса: 50 т
+Вооружение: 105-мм пушка M68, 3×7,62-мм пулемёта
+Экипаж: 4 человека
+Годы эксплуатации: 1965–1980-е">
+<div class="tank-info">
+<div class="tank-name">Magach 1</div>
+<div class="tank-country">Израиль</div>
+<div class="tank-description">
+Модернизированная версия американского танка M48 Patton. Основные улучшения: новая пушка, двигатель и система управления огнём. Участвовал в Шестидневной войне, где доказал своё превосходство над арабскими Т-54/55.
+</div>
+</div>
+</div>
+<div class="tank-card">
+<img src="./tanks/il_aml_90.png" alt="M2A4" 
+onclick="openModal(this)"
+data-description="Израильский бронеавтомобиль AML-90
+Боевая масса: 5,5 т
+Вооружение: 90-мм пушка GIAT F1, 1×7,62-мм пулемёт
+Экипаж: 3 человека
+Годы эксплуатации: с 1960-х">
+<div class="tank-info">
+<div class="tank-name">AML-90</div>
+<div class="tank-country">Израиль</div>
+<div class="tank-description">
+Французские разведывательные машины, широко использовавшиеся израильтянами. Применялись для разведки, патрулирования и огневой поддержки. Отличались высокой подвижностью и мощным для своего класса вооружением.
+</div>
+</div>
+</div>
+</div>
+<div id="modal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal(event)">×</span>
+    <div class="modal-content">
+        <img id="modal-img" src="" alt="modal image">
+        <div class="modal-text" id="modal-description">
+        </div>
+    </div>
+</div>
+<script type="module" src="./js/supabase.js"></script>
+<script type="module" src="./js/main.js"></script>
+    <div id="notification-container"></div>
+</body>
+</html>
